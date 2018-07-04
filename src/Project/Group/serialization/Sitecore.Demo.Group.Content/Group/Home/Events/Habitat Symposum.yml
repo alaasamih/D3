@@ -1,0 +1,32 @@
+﻿---
+ID: "b499c217-3d83-4521-86a0-76598145cd23"
+Parent: "3551efa6-bfa2-43df-a4d8-8572e47a6bd3"
+Template: "d16f0362-6a95-4e2f-b861-87ba8cabda0e"
+Path: /sitecore/content/Group/Home/Events/Habitat Symposum
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180702T091534Z
+    - ID: "7823252a-5d9b-4408-a090-b2595c92e69d"
+      Hint: Date
+      Value: 20180701T210000Z
+    - ID: "e178b978-716c-4037-9005-157171bebbf3"
+      Hint: Venue
+      Value: Tanasuk Amman
+    - ID: "e972a2ad-4bfe-45c6-abf7-113d9cdfc1fa"
+      Hint: Title
+      Value: Habitat Symposum
+    - ID: "ee7c47e0-4d28-4cdb-b731-6b5d3c2803d0"
+      Hint: Description
+      Value: Create Habitat solution
+    - ID: "f12c22bb-e57d-4fab-96e1-1229e4e7ff0e"
+      Hint: MapPointName
+      Value: Here it is
+    - ID: "f686ac8e-1d33-45db-8e1a-1b40cd491e7a"
+      Hint: MapPointLocation
+      Value: 31.9586354,35.869266100000004
