@@ -1,7 +1,7 @@
 ﻿@using Sitecore.Foundation.Assets
 @using Sitecore.Foundation.Assets.Models
 @using Sitecore.Foundation.Assets.Services
-@using Sitecore.Foundation.SitecoreExtensions.Repositories
+@using Sitecore.Foundation.SitecoreExtensions.Extensions
 @using Sitecore.Mvc.Analytics.Extensions
 @inherits WebViewPage
 @{
@@ -26,9 +26,9 @@
   @RenderAssetsService.Current.RenderStyles()
   @Html.Sitecore().VisitorIdentification()
 </head>
-<body class="@(Sitecore.Context.PageMode.IsExperienceEditor ? "header-static" : "") @(Sitecore.Context.PageMode.IsNormal ? "" : (Sitecore.Context.PageMode.IsExperienceEditor ? "pagemode-edit" : "pagemode-preview"))">
+<body class="header-static @(Sitecore.Context.PageMode.IsNormal ? "" : (Sitecore.Context.PageMode.IsExperienceEditor ? "pagemode-edit" : "pagemode-preview"))">
   <div id="main-container">
-    <header class="@(Sitecore.Context.PageMode.IsExperienceEditor ? "header-static" : "header-fixed")">
+    <header class="header-static">
       @Html.Sitecore().Placeholder("header-top")
 
       @Html.Sitecore().Placeholder("navbar")
@@ -36,7 +36,7 @@
     <main role="main">
       @Html.Sitecore().Placeholder("page-layout")
     </main>
-    <footer>
+    <footer class="bg-dark">
       @Html.Sitecore().Placeholder("footer")
     </footer>
 
