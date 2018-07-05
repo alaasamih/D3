@@ -176,7 +176,7 @@
       <DependentUpon>white-wonder.css</DependentUpon>
     </Content>
     <Content Include="Views\web.config" />
-    <Content Include="Views\D3\Layouts\D3.cshtml" />
+    <Content Include="Views\D3\Layouts\Default.cshtml" />
     <Content Include="styles\white-wonder.scss" />
     <Content Include="styles\white-wonder\_fonts.scss" />
     <Content Include="styles\white-wonder\_overrides.scss" />
