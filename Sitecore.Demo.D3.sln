@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.26430.6
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Project", "Project", "{6F81D5A7-DD8E-40CF-A696-7E14B6309CD0}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Group", "Group", "{9D180712-0180-4814-95C8-C9A0732EC28D}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "D3", "D3", "{9D180712-0180-4814-95C8-C9A0732EC28D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Demo.D3", "src\Project\Group\code\Sitecore.Demo.D3.csproj", "{4A74623C-08D4-4984-A7A5-E482AF0B0630}"
 EndProject

@@ -1,7 +1,7 @@
 {
-  "name": "Sitecore-Demo.Group",
+  "name": "Sitecore-Demo.D3",
   "version": "1.0.0",
-  "description": "Sitecore.Demo.Group Node Dependencies",
+  "description": "Sitecore.Demo.D3 Node Dependencies",
   "main": "gulpfile.js",
   "dependencies": {
     "async": "^1.5.2",
@@ -35,12 +35,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Sitecore/Sitecore.Demo.Group.git"
+    "url": "git+https://github.com/Sitecore/Sitecore.Demo.D3.git"
   },
   "author": "Sitecore Corporation A/S",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Sitecore/Sitecore.Demo.Group/issues"
+    "url": "https://github.com/Sitecore/Sitecore.Demo.D3/issues"
   },
-  "homepage": "https://github.com/Sitecore/Sitecore.Demo.Group#readme"
+  "homepage": "https://github.com/Sitecore/Sitecore.Demo.D3#readme"
 }

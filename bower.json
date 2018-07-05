@@ -1,10 +1,10 @@
 {
-    "name": "sitecore.demo.group",
+    "name": "sitecore.demo.D3",
     "homepage": "https://github.com/Sitecore/Habitat",
     "authors": [
         "Thomas Eldblom <the@sitecore.net>"
     ],
-    "description": "Sitecore Demo Group",
+    "description": "Sitecore Demo D3",
     "main": "",
     "keywords": [
         "Sitecore",

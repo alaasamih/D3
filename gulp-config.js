@@ -4,7 +4,7 @@ module.exports = function () {
     websiteRoot: instanceRoot + "\\Website",
     sitecoreLibraries: instanceRoot + "\\Website\\bin",
     licensePath: instanceRoot + "\\Data\\license.xml",
-    solutionName: "Sitecore.Demo.Group",
+    solutionName: "Sitecore.Demo.D3",
     buildConfiguration: "Debug",
     buildToolsVersion: 15.0,
     buildMaxCpuCount: 0,
