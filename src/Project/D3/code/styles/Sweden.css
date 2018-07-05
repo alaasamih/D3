@@ -499,7 +499,8 @@ body {
         content: ""; }
     body .fa-arrows-alt:before {
         content: ""; }
-    body .fa-group:before,
+    body .fa-
+    :before,
     body .fa-users:before {
         content: ""; }
     body .fa-chain:before,
