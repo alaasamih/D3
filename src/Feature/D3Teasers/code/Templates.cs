@@ -6,11 +6,11 @@ using System.Web;
 namespace Sitecore.Demo.D3
 {
   using Sitecore.Data;
-  public class Template
+  public class Templates
   {
     public struct TeaserContent
     {
-      public static ID ID = new ID("{FEC0E62A-01FD-40E5-88F3-E5229FE79527}");
+      public static ID ID = new ID("{4D77450E-E9DC-4CB7-AA9E-8CB0801757AF}");
 
       public struct Fields
       {
