@@ -1,20 +1,4 @@
 ﻿@using Sitecore.Feature.D3Identity
-@using Sitecore.Foundation.SitecoreExtensions.Extensions
 @model Sitecore.Mvc.Presentation.RenderingModel
 
-@{
-  var identity = IdentityRepository.Get(Model.Item);
-  if (identity == null)
-  {
-    return;
-  }
-}
-<div class="trademark">
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12">
-       @Html.Sitecore().Field(Templates.Identity.Fields.Copyright, identity)
-      </div>
-    </div>
-  </div>
-</div>
+@Html.Sitecore().Field(Templates.Identity.Fields.Copyright)

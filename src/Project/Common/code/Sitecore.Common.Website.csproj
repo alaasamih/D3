@@ -101,13 +101,15 @@
     </Content>
     <Content Include="App_Config\Include\Project\Sitecore.Common.Website.config" />
     <None Include="Properties\PublishProfiles\Local.pubxml" />
+    <Content Include="Views\D3Common\PageHeader.cshtml" />
+    <Content Include="Views\D3Common\PageFooter.cshtml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Views\web.config" />
+    <None Include="Views\D3Common\web.config" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

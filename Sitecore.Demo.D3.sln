@@ -66,7 +66,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Assets", "Assets", "{ECDA5E
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Foundation.Assets", "src\Foundation\Assets\code\Sitecore.Foundation.Assets.csproj", "{7E46FF93-EE05-412C-AC47-2A59A13DA73C}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{E03B9C08-33E0-49A4-806A-ABDC970BEE5B}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "D3Common", "D3Common", "{E03B9C08-33E0-49A4-806A-ABDC970BEE5B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Common.Website", "src\Project\Common\code\Sitecore.Common.Website.csproj", "{87B7CB9E-B26D-4F0B-A7AE-B5C4B867AA9E}"
 EndProject
