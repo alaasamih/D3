@@ -13,10 +13,18 @@
 <html lang="@Sitecore.Context.Language.CultureInfo.TwoLetterISOLanguageName">
 <!--<![endif]-->
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta http-equiv="Content-type" content="text/html; charset=utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <meta name="description" content="Welcome to the Dubai Design District. Home to designers, artists and creative thinkers.">
+  <meta property="og:title" content="Dubai Design District | Homepage">
+  <meta property="og:image" content="images/og-image.jpg">
+  <meta property="og:image:height" content="1257">
+  <meta property="og:image:width" content="2400">
+  <meta property="og:description" content="Welcome to the Dubai Design District. Home to designers, artists and creative thinkers.">
+
+  <meta name="format-detection" content="telephone=no">
+
   @if (!Sitecore.Context.PageMode.IsExperienceEditor)
   {
     @Html.Sitecore().Placeholder("head")
@@ -29,19 +37,29 @@
 <body class="header-static @(Sitecore.Context.PageMode.IsNormal ? "" : (Sitecore.Context.PageMode.IsExperienceEditor ? "pagemode-edit" : "pagemode-preview"))">
   <div id="main-container">
     <header class="header-static">
-      @Html.Sitecore().Placeholder("header-top")
+      <div class="container">
+        <div class="row">
+          @Html.Sitecore().Placeholder("header-top")
 
-      @Html.Sitecore().Placeholder("navbar")
+          @Html.Sitecore().Placeholder("navbar")
+        </div>
+      </div>
     </header>
-    <main role="main">
-      @Html.Sitecore().Placeholder("page-layout")
+    <main>
+      <h1 class="visually-hidden">Dubai Design District</h1>
+      <div class="container">
+        @Html.Sitecore().Placeholder("page-layout")
+      </div>
     </main>
     <footer class="bg-dark">
-      @Html.Sitecore().Placeholder("footer")
+      <div class="subfooter">
+        <div class="container">
+          <div class="row">
+            @Html.Sitecore().Placeholder("footer")
+          </div>
+        </div>
+      </div>
     </footer>
-
-    @Html.Sitecore().Placeholder("page-sidebar")
   </div>
-  @RenderAssetsService.Current.RenderScript(ScriptLocation.Body)
 </body>
 </html>

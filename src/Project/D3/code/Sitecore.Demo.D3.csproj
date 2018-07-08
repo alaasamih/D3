@@ -163,28 +163,8 @@
     <None Include="Properties\PublishProfiles\Local.pubxml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="styles\Sweden.css">
-      <DependentUpon>Sweden.scss</DependentUpon>
-    </Content>
-    <Content Include="styles\Sweden.min.css">
-      <DependentUpon>Sweden.css</DependentUpon>
-    </Content>
-    <Content Include="styles\white-wonder.css">
-      <DependentUpon>white-wonder.scss</DependentUpon>
-    </Content>
-    <Content Include="styles\white-wonder.min.css">
-      <DependentUpon>white-wonder.css</DependentUpon>
-    </Content>
     <Content Include="Views\web.config" />
     <Content Include="Views\D3\Layouts\Default.cshtml" />
-    <Content Include="styles\white-wonder.scss" />
-    <Content Include="styles\white-wonder\_fonts.scss" />
-    <Content Include="styles\white-wonder\_overrides.scss" />
-    <Content Include="styles\white-wonder\_variables.scss" />
-    <Content Include="styles\Sweden.scss" />
-    <Content Include="styles\Sweden\_fonts.scss" />
-    <Content Include="styles\Sweden\_overrides.scss" />
-    <Content Include="styles\Sweden\_variables.scss" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

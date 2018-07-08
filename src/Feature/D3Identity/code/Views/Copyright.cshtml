@@ -1,5 +1,5 @@
-﻿@using Sitecore.Feature.Identity
-@using Sitecore.Feature.Identity.Repositories
+﻿@using Sitecore.Feature.D3Identity
+@using Sitecore.Feature.D3Identity.Repositories
 @using Sitecore.Foundation.SitecoreExtensions.Extensions
 @model Sitecore.Mvc.Presentation.RenderingModel
 
@@ -10,6 +10,12 @@
     return;
   }
 }
-<small class="copyright">
-  @Html.Sitecore().Field(templates.Identity.Fields.Copyright, identity)
-</small>
+<div class="trademark">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+       @Html.Sitecore().Field(Templates.Identity.Fields.Copyright, identity)
+      </div>
+    </div>
+  </div>
+</div>
