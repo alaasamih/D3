@@ -96,10 +96,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Config\Include\Project\Sitecore.Common.Website.Serialization.config" />
-    <Content Include="App_Config\Include\Project\z.Sitecore.Common.Website.DevSettings.config">
+    <Content Include="App_Config\Include\Project\Sitecore.Common.Website.config" />
+    <Content Include="App_Config\Include\Project\z.Sitecore.Demo.D3.DevSettings.config">
       <SubType>Designer</SubType>
     </Content>
-    <Content Include="App_Config\Include\Project\Sitecore.Common.Website.config" />
     <None Include="Properties\PublishProfiles\Local.pubxml" />
     <Content Include="Views\D3Common\PageHeader.cshtml" />
     <Content Include="Views\D3Common\PageFooter.cshtml" />
