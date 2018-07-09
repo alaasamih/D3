@@ -156,10 +156,6 @@
     <Content Include="App_Config\Include\Project\Sitecore.Demo.D3.Serialization.config" />
     <Content Include="App_Config\Security\domains.config.transform" />
     <Content Include="bower.json" />
-    <None Include="compilerconfig.json" />
-    <None Include="compilerconfig.json.defaults">
-      <DependentUpon>compilerconfig.json</DependentUpon>
-    </None>
     <None Include="Properties\PublishProfiles\Local.pubxml" />
   </ItemGroup>
   <ItemGroup>
