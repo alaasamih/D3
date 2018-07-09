@@ -50,6 +50,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Foundation.Sitecor
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Feature.Identity", "src\Feature\Identity\code\Sitecore.Feature.Identity.csproj", "{0D0B809C-03AB-4EE1-898F-CFE28CF5B245}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Feature.PageContent", "src\Feature\PageContent\code\Sitecore.Feature.PageContent.csproj", "{DA079E95-DB53-4A66-AB35-2DAB71D19276}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -76,6 +78,10 @@ Global
 		{0D0B809C-03AB-4EE1-898F-CFE28CF5B245}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0D0B809C-03AB-4EE1-898F-CFE28CF5B245}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0D0B809C-03AB-4EE1-898F-CFE28CF5B245}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA079E95-DB53-4A66-AB35-2DAB71D19276}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA079E95-DB53-4A66-AB35-2DAB71D19276}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA079E95-DB53-4A66-AB35-2DAB71D19276}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA079E95-DB53-4A66-AB35-2DAB71D19276}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -95,6 +101,7 @@ Global
 		{007CD5DC-0030-460D-91A3-3DDEA9AB472F} = {710EC5F9-3473-49A1-A034-55EC396C6CB5}
 		{B535703F-8D07-4F23-A533-2974BB4CC7B1} = {02BAF3FF-15E5-4C65-BB40-C3737EAF7720}
 		{0D0B809C-03AB-4EE1-898F-CFE28CF5B245} = {9EEA1520-1BDF-4D72-849B-5D0A8617CE8B}
+		{DA079E95-DB53-4A66-AB35-2DAB71D19276} = {E43717F3-A0D3-4BB1-944B-AAB0CA59F52C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D5BA27B1-5009-49D1-BBDE-A3C73AD2F281}
