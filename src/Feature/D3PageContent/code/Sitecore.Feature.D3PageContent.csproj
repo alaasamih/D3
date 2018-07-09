@@ -8,12 +8,12 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{BF93E8CE-AF94-4C9A-A880-150EA35F6AB4}</ProjectGuid>
+    <ProjectGuid>{C6AC40DC-EC35-478C-AB98-82AF183E4FDE}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Sitecore.Feature.D3Teasers</RootNamespace>
-    <AssemblyName>Sitecore.Feature.D3Teasers</AssemblyName>
+    <RootNamespace>Sitecore.Feature.D3PageContent</RootNamespace>
+    <AssemblyName>Sitecore.Feature.D3PageContent</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
@@ -116,10 +116,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Config\Include\Feature\Sitecore.Feature.D3Teasers.config">
+    <Content Include="App_Config\Include\Feature\Sitecore.Feature.D3Identity.config">
       <SubType>Designer</SubType>
     </Content>
-    <Content Include="App_Config\Include\Feature\Sitecore.Feature.D3Teasers.Serialization.config" />
+    <Content Include="App_Config\Include\Feature\Sitecore.Feature.D3Identity.Serialization.config" />
     <Content Include="App_Config\Include\Rainbow.config" />
     <Content Include="App_Config\Include\Unicorn\Unicorn.zSharedSecret.config.example" />
     <Content Include="App_Config\Include\Unicorn\Unicorn.UI.config" />
@@ -139,10 +139,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Templates.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Views\D3Teasers\web.config" />
+    <None Include="Views\web.config" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -168,9 +167,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>58730</DevelopmentServerPort>
+          <DevelopmentServerPort>50224</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:58730/</IISUrl>
+          <IISUrl>http://localhost:50224/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
