@@ -1,0 +1,154 @@
+﻿---
+ID: "6db6d43d-42da-4a05-9160-f118b294ad69"
+Parent: "77c503a9-2c1a-4987-9ec1-f77b3e30a016"
+Template: "8e51248d-d460-423b-93ac-a26e1007eed4"
+Path: /sitecore/content/Group/Sweden/Operations
+DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 100
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Type: layout
+  Value: |
+    <r xmlns:p="p" xmlns:s="s"
+      p:p="1"
+      s:xsd="http://www.w3.org/2001/XMLSchema">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+        <r
+          uid="{E6CA18D8-321D-4105-9C38-0622E94BE400}"
+          s:ds=""
+          s:par="" />
+        <r
+          uid="{EF51B238-7CE2-4E39-AB87-D05424735160}"
+          s:ds=""
+          s:par="" />
+        <r
+          uid="{07C9FE71-A5E2-4E5F-B276-5F2B73481D44}"
+          s:ds=""
+          s:par="" />
+        <r
+          uid="{7BD25BD6-C6C4-4FBE-9828-D29A39A2FEC9}"
+          s:ds=""
+          s:par="" />
+        <r
+          uid="{FBDB4313-35B5-4C26-A586-17F48FD2DC41}"
+          s:ds=""
+          s:par="" />
+        <r
+          uid="{75551DEC-A457-43A3-B76F-91742B5DDE93}"
+          s:ds=""
+          s:par="" />
+        <r
+          uid="{462763BC-EC80-4FBA-9714-B63A87B43259}"
+          s:ds=""
+          s:par="" />
+        <r
+          uid="{3555E24E-FBE9-4D81-AAC7-50408AA45EF0}"
+          s:ds=""
+          s:par="" />
+        <r
+          uid="{9C8A45F2-7008-42C1-8B8A-80A88825C1D8}"
+          s:ds="/sitecore/content/Group/Sweden/Search"
+          s:par="" />
+        <r
+          uid="{1DF746C3-2D29-43E6-9DE2-05622DED6F97}"
+          s:ds=""
+          s:par="UseStaticPlaceholderNames&amp;Type=bg-primary&amp;Media&amp;Parallax" />
+        <r
+          uid="{3CDF4DD8-28A4-4185-8C09-A73CAA4633F7}"
+          s:ds=""
+          s:par="" />
+        <r
+          uid="{A3CA17FF-693C-46F1-87AA-B8C1833F1890}"
+          s:ds=""
+          s:par="Background&amp;ContainerIsFluid&amp;UseStaticPlaceholderNames=1" />
+        <r
+          uid="{66422117-69C1-4B62-9323-482F16C4F244}"
+          s:ds=""
+          s:par="Background&amp;ContainerIsFluid&amp;UseStaticPlaceholderNames=1" />
+        <r
+          uid="{A4AD2DA4-136E-466A-BC85-F02C9205869D}"
+          s:ds=""
+          s:par="" />
+        <r
+          uid="{E2040FB7-4151-456D-9315-5973E4EB4D9D}"
+          s:ds=""
+          s:par="" />
+        <r
+          uid="{025588CB-DFC0-4B02-8223-0015C525AE52}"
+          s:ds=""
+          s:par="Background&amp;ContainerIsFluid&amp;UseStaticPlaceholderNames=1" />
+        <r
+          uid="{0E0C6DCA-1A29-4975-84D7-E99498A64A72}"
+          s:par="" />
+        <r
+          uid="{84124EE2-E678-4144-8316-0D6874866604}"
+          s:ds="{77C503A9-2C1A-4987-9EC1-F77B3E30A016}"
+          s:par="Background=%7BBD2F308A-E00A-4372-ADBB-BD64712A54FA%7D" />
+        <r
+          uid="{E200C0B1-2874-4DC9-924A-457DB47EFF0B}"
+          s:par="Background=%7BBD2F308A-E00A-4372-ADBB-BD64712A54FA%7D" />
+        <r
+          uid="{A3BAD4D4-8E21-4B30-8C4C-B04163653D62}"
+          s:ds=""
+          s:par="" />
+        <r
+          uid="{20AB9BAA-C112-4567-A701-564423E650D2}"
+          s:ds=""
+          s:par="" />
+      </d>
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1b483e91-d8c4-4d19-ba03-462074b55936"
+      Hint: NavigationTitle
+      Value: Operations
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160822T080738Z
+    - ID: "9492e0bb-9df9-46e7-8188-ec795c4ade44"
+      Hint: Image
+      Value: |
+        <image mediaid="{1C9D05D5-5503-499A-9782-444109A3AF42}" />
+    - ID: "ac3fd4db-8266-476d-9635-67814d91e901"
+      Hint: Summary
+      Value: "<p>Habitat Group invest and operate across a number of business vertical in both established and upcoming markets. We strive to be market leading in all we do - and believe that always providing the best Customer Experience is the way.</p>"
+    - ID: "c30a013f-3cc8-4961-9837-1c483277084a"
+      Hint: Title
+      Value: Operations
+    - ID: "ca0479ce-0bfe-4522-83de-ba688b380a78"
+      Hint: BrowserTitle
+      Value: Business Verticals
+- Language: "sv-SE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1b483e91-d8c4-4d19-ba03-462074b55936"
+      Hint: NavigationTitle
+      Value: SwedenOperations
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180703T110919Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "9492e0bb-9df9-46e7-8188-ec795c4ade44"
+      Hint: Image
+      Value: |
+        <image mediaid="{1C9D05D5-5503-499A-9782-444109A3AF42}" />
+    - ID: "ac3fd4db-8266-476d-9635-67814d91e901"
+      Hint: Summary
+      Value: SwedenOperationsSwedenOperationsSwedenOperationsSwedenOperations
+    - ID: "c30a013f-3cc8-4961-9837-1c483277084a"
+      Hint: Title
+      Value: SwedenOperations
+    - ID: "d74f396d-5c5e-4916-bd0a-bfd58b6b1967"
+      Hint: Body
+      Value: 

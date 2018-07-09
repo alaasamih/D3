@@ -1,0 +1,117 @@
+﻿---
+ID: "77c503a9-2c1a-4987-9ec1-f77b3e30a016"
+Parent: "1464b4d8-09d4-40ea-a80e-317803c9e18a"
+Template: "567c4bd6-6791-4490-a1a3-4d1fe0eeee68"
+Path: /sitecore/content/Group/Sweden
+DB: master
+SharedFields:
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Type: layout
+  Value: |
+    <r xmlns:p="p" xmlns:s="s"
+      p:p="1"
+      s:xsd="http://www.w3.org/2001/XMLSchema">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+        <r
+          uid="{9C8A45F2-7008-42C1-8B8A-80A88825C1D8}"
+          s:ds="/sitecore/content/Group/Sweden/Search"
+          s:par="" />
+      </d>
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180703T124421Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+- Language: "sv-SE"
+  Fields:
+  - ID: "53b5af0a-265f-4e60-b2b2-4576ce0beccf"
+    Hint: Theme
+    Value: "{B8DF1CF5-A505-4D6E-94D7-E1046B7BD2F8}"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Type: Layout
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1"
+          s:xsd="http://www.w3.org/2001/XMLSchema">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{E6CA18D8-321D-4105-9C38-0622E94BE400}"
+              s:ds=""
+              s:par="" />
+            <r
+              uid="{EF51B238-7CE2-4E39-AB87-D05424735160}"
+              s:ds=""
+              s:par="" />
+            <r
+              uid="{07C9FE71-A5E2-4E5F-B276-5F2B73481D44}"
+              s:ds=""
+              s:par="" />
+            <r
+              uid="{7BD25BD6-C6C4-4FBE-9828-D29A39A2FEC9}"
+              s:ds=""
+              s:par="" />
+            <r
+              uid="{75551DEC-A457-43A3-B76F-91742B5DDE93}"
+              s:ds=""
+              s:par="" />
+            <r
+              uid="{462763BC-EC80-4FBA-9714-B63A87B43259}"
+              s:ds=""
+              s:par="" />
+            <r
+              uid="{3555E24E-FBE9-4D81-AAC7-50408AA45EF0}"
+              s:ds=""
+              s:par="" />
+            <r
+              uid="{1DF746C3-2D29-43E6-9DE2-05622DED6F97}"
+              s:ds=""
+              s:par="Background&amp;ContainerIsFluid&amp;UseStaticPlaceholderNames" />
+            <r
+              uid="{A3CA17FF-693C-46F1-87AA-B8C1833F1890}"
+              s:ds=""
+              s:par="Background&amp;ContainerIsFluid&amp;UseStaticPlaceholderNames" />
+            <r
+              uid="{E2040FB7-4151-456D-9315-5973E4EB4D9D}"
+              s:ds=""
+              s:par="" />
+            <r
+              uid="{025588CB-DFC0-4B02-8223-0015C525AE52}"
+              s:ds=""
+              s:par="Background&amp;ContainerIsFluid&amp;UseStaticPlaceholderNames=1" />
+            <r
+              uid="{0E0C6DCA-1A29-4975-84D7-E99498A64A72}"
+              s:par="" />
+            <r
+              uid="{E200C0B1-2874-4DC9-924A-457DB47EFF0B}"
+              s:par="Background=%7BBD2F308A-E00A-4372-ADBB-BD64712A54FA%7D" />
+            <r
+              uid="{A3BAD4D4-8E21-4B30-8C4C-B04163653D62}"
+              s:ds=""
+              s:par="" />
+          </d>
+        </r>
+    - ID: "1b483e91-d8c4-4d19-ba03-462074b55936"
+      Hint: NavigationTitle
+      Value: Sweden bbbbbbb
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180703T100143Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

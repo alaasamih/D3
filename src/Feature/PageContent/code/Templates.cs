@@ -21,6 +21,5 @@
         public static readonly ID Link = new ID("{5B3EDB8A-66AC-4605-A02C-283E26B95696}");
       }
     }
-    }
   }
 }

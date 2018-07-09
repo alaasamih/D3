@@ -1,0 +1,23 @@
+﻿---
+ID: "d464af4d-151b-4fd8-bc66-425af9f3cb17"
+Parent: "3551efa6-bfa2-43df-a4d8-8572e47a6bd3"
+Template: "d16f0362-6a95-4e2f-b861-87ba8cabda0e"
+Path: /sitecore/content/Group/Home/Events/Test
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180702T092008Z
+    - ID: "7823252a-5d9b-4408-a090-b2595c92e69d"
+      Hint: Date
+      Value: 20180705T152200
+    - ID: "e178b978-716c-4037-9005-157171bebbf3"
+      Hint: Venue
+      Value: test
+    - ID: "e972a2ad-4bfe-45c6-abf7-113d9cdfc1fa"
+      Hint: Title
+      Value: Test
