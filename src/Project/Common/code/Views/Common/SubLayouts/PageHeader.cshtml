@@ -22,8 +22,18 @@
   <div class="row">
     <div class="col-xs-12 header-container">
       @Html.Sitecore().Placeholder("logo-header")
-
-
+      <nav class="menu">
+        @Html.Sitecore().Placeholder("nav-header")
+        <div class="menu-actions">
+          <div class="menu-subscribe">
+            <a href="http://www.dubaidesigndistrict.com/subscribe" class="menu-subscribeButton">Subscribe</a>
+          </div>
+          <div class="menu-liveChat">
+            <button id="liveagent_button_online_573w00000008QV2" href="javascript: void(0);" class="btn menu-liveChatButton menu-liveChatButton-online" onclick="liveagent.startChat(&#39;573w00000008QV2&#39;)">Chat To Us</button>
+            <button id="liveagent_button_offline_573w00000008QV2" href="javascript: void(0);" class="btn menu-liveChatButton menu-liveChatButton-offline" onclick="liveagent.startChat(&#39;573w00000008QV2&#39;)" style="display: none;">Offline</button>
+          </div>
+        </div>
+      </nav>
     </div>
   </div>
 </div>

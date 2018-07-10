@@ -1,16 +1,13 @@
 ﻿---
-ID: "5e555541-e0c6-4f8a-a8c5-33d2fbde19fe"
+ID: "80b0e418-fe9c-4d92-a67a-423e961aa0e1"
 Parent: "d5d2ab0a-3909-4e22-af15-3bef1e97a0c0"
 Template: "99f8905d-4a87-4eb8-9f8b-a9bebfb3add6"
-Path: /sitecore/layout/Renderings/Feature/PageContent/PageImage
+Path: /sitecore/layout/Renderings/Feature/PageContent/PageBanner
 DB: master
 SharedFields:
 - ID: "51b435bc-f7b9-478a-9c51-52916af96ff5"
   Hint: Path
-  Value: /Views/PageContent/PageImage.cshtml
-- ID: "ef7c5528-7307-4e19-863b-da19eed6a9ed"
-  Hint: Open Properties after Add
-  Value: 
+  Value: /Views/PageContent/PageBanner.cshtml
 Languages:
 - Language: en
   Versions:
@@ -18,4 +15,4 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20150825T123756Z
+      Value: 20180710T062119Z
