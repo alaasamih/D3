@@ -1,1 +1,12 @@
-﻿<p>Call <a href="tel:+97144333000">+971 4 433 3000</a></p>
+﻿@using Sitecore.Feature.Identity
+@using Sitecore.Feature.Identity.Repositories
+@using Sitecore.Foundation.SitecoreExtensions.Extensions
+@model Sitecore.Mvc.Presentation.RenderingModel
+@{
+  var identity = IdentityRepository.Get(Model.Item);
+  if (identity == null)
+  {
+    return;
+  }
+}
+<p>Call <a href="tel:@Html.Sitecore().Field(Templates.Identity.Fields.OrganisationPhone, identity)">@Html.Sitecore().Field(Templates.Identity.Fields.OrganisationPhone, identity)</a></p>

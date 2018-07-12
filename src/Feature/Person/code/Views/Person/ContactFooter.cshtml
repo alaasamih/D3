@@ -1,0 +1,7 @@
+﻿@using Sitecore.Feature.Person
+@model Sitecore.Mvc.Presentation.RenderingModel
+<p>Call <a href="tel:@Html.Sitecore().Field(Templates.Person.Fields.Telephone.ToString(), Model.Item)">
+  @Html.Sitecore().Field(Templates.Person.Fields.Telephone.ToString(), Model.Item)
+   </a>
+  </p>
+

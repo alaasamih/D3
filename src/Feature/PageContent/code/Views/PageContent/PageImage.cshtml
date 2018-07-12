@@ -1,0 +1,20 @@
+﻿@using Sitecore.Feature.PageContent
+@using Sitecore.Data.Items;
+@using Sitecore.Foundation.SitecoreExtensions.Extensions
+@model Sitecore.Mvc.Presentation.RenderingModel
+<section class="bannerLink">
+  <div class="bannerLink-image" style="background-image: url('images/banners/the-district.jpg')">
+    @Html.Sitecore().ImageField(Templates.HasPageContent.Fields.Image,Model.Item, mw: 1123,mh:351)
+  </div>
+  <div class="bannerLink-content">
+    <div class="row">
+      <div class="col-md-10 col-md-push-1">
+        <h2>@Html.Sitecore().Field(Templates.HasPageContent.Fields.Title,Model.Item)</h2>
+        <p>
+          @Html.Sitecore().Field(Templates.HasPageContent.Fields.Summary, Model.Item)
+        </p>
+        <p>  @Html.Sitecore().Field(Templates.HasPageContent.Fields.Link, Model.Item)</p>
+      </div>
+    </div>
+  </div>
+</section>
