@@ -1,0 +1,34 @@
+﻿@using Sitecore.Feature.Media
+@using Sitecore.Feature.Media.Repositories
+@using Sitecore.Data.Items;
+@using Sitecore.Foundation.SitecoreExtensions.Extensions
+@model Sitecore.Mvc.Presentation.RenderingModel
+@{
+  var elements = MediaSelectorElementsRepository.Get(Model.Item).ToArray();
+}
+<section class="heroBanner-slider slick-initialized slick-slider slick-dotted">
+  <button class="slick-prev slick-arrow" aria-label="Previous" type="button" style="">Previous</button>
+  <div class="slick-list draggable">
+    <div class="slick-track" style="opacity: 1; width: 7861px; transform: translate3d(-1123px, 0px, 0px);">
+      @{ int i = 0; }
+      @foreach (var element in elements)
+      {
+        i++;
+        <div class="heroBanner slick-slide slick-cloned" data-slick-index="i" style="height: 437px; width: 1123px;" aria-hidden="true">
+          <div class="heroBanner-image  " style="background-image: url(&#39;//d3.imgix.net/images/banners/business-partners.jpg?q=60&amp;auto=format,compress&amp;w=1123&#39;)">
+            @Html.Sitecore().ImageField(Templates.HasMedia.Fields.Thumbnail, element.Item, mw: 1123)
+          </div>
+          <div class="heroBanner-content">
+            <h2 class="text-uppercase">@Html.Sitecore().Field(Templates.HasMedia.Fields.Title, element.Item)</h2>
+            <p>
+              @Html.Sitecore().Field(Templates.HasMedia.Fields.Link, element.Item)
+            </p>
+          </div>
+        </div>
+      }
+
+    </div>
+  </div>
+  <button class="slick-next slick-arrow" aria-label="Next" type="button" style="">Next</button><ul class="slick-dots" style=""><li class="slick-active"><button type="button">1</button></li><li class=""><button type="button">2</button></li><li class=""><button type="button">3</button></li></ul>
+</section>
+

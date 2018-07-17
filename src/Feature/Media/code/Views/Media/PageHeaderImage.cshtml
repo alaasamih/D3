@@ -1,0 +1,19 @@
+﻿@using Sitecore.Feature.Media
+@using Sitecore.Foundation.SitecoreExtensions.Extensions
+@model Sitecore.Mvc.Presentation.RenderingModel
+<div class="row">
+  <div class="col-xs-12">
+    <div class="heroBanner  ">
+      <div class="heroBanner-image  " >
+        @Html.Sitecore().ImageField(Templates.HasMedia.Fields.Thumbnail, Model.Item)
+      </div>
+      <div class="heroBanner-content">
+        <h1>@Html.Sitecore().Field(Templates.HasMedia.Fields.Title, Model.Item)</h1>
+        <p>
+          @Html.Sitecore().Field(Templates.HasMedia.Fields.Description, Model.Item)
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+

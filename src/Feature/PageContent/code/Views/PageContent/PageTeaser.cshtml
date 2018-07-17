@@ -1,0 +1,11 @@
+﻿@using Sitecore.Feature.PageContent
+@using Sitecore.Foundation.SitecoreExtensions.Extensions
+@model Sitecore.Mvc.Presentation.RenderingModel
+  @{ 
+      var item = Model.Item;
+  }
+<div class="events-details">
+  <h2>@Html.Sitecore().Field(Templates.HasPageContent.Fields.Title, Model.Item)</h2>
+  <p> @Html.Sitecore().Field(Templates.HasPageContent.Fields.Summary, Model.Item)</p>
+  <a href="@item.LinkFieldUrl(Templates.HasPageContent.Fields.Link)" class="btn-link">@Html.Sitecore().Field(Templates.HasPageContent.Fields.Title, Model.Item)</a>
+</div>

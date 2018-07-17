@@ -1,0 +1,84 @@
+﻿@using Sitecore.Feature.Navigation
+@using Sitecore.Foundation.SitecoreExtensions.Extensions
+@model Sitecore.Mvc.Presentation.RenderingModel
+
+
+
+<ul class="menu-nav">
+
+  @foreach (Sitecore.Data.Items.Item item in Model.Item.Children)
+  {
+    <li class="menu-navItem@(item.TemplateID.ToString()=="{6C47918B-4D58-4CF0-831D-E5A7CE022986}"? " menu-navItem-isEmpty": string.Empty) ">
+      @if (item.TemplateID.ToString() == "{6C47918B-4D58-4CF0-831D-E5A7CE022986}")
+      {
+        <a href="@item.LinkFieldUrl(Templates.Link.Fields.Link)" class="menu-navItemLabel">
+          @Html.Sitecore().Field("NavigationTitle", item) <span class="icon icon-arrow-right" aria-hidden="true" role="presentation">
+            <svg>
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/images/icons.svg#icon-arrow-right"></use>
+            </svg>
+          </span>
+
+        </a>
+      }
+      else if (item.TemplateID.ToString() == "{8AADF226-FC14-4F1F-9542-62B826A398A3}")
+      {
+        <a href="javascript: void(0);" class="menu-navItemLabel">
+          @Html.Sitecore().Field("NavigationTitle", item) <span class="icon icon-arrow-right" aria-hidden="true" role="presentation">
+            <svg>
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/images/icons.svg#icon-arrow-right"></use>
+            </svg>
+          </span>
+
+        </a>
+      }
+      @if (item.TemplateID.ToString() == "{8AADF226-FC14-4F1F-9542-62B826A398A3}")
+      {
+
+        <div class="menu-submenu">
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-12">
+                <div class="menu-submenuItems">
+
+                  @foreach (Sitecore.Data.Items.Item Subitem in item.Children)
+                  {
+                    <div class="@(Subitem.TemplateID.ToString()=="{6C47918B-4D58-4CF0-831D-E5A7CE022986}"?"menu-submenuItem":"menu-submenuLinkItem") ">
+
+                      <a href="@Subitem.LinkFieldUrl(Templates.Link.Fields.Link)">
+                        @if (Subitem.TemplateID.ToString() == "{6C47918B-4D58-4CF0-831D-E5A7CE022986}")
+                        {
+                          <div class="menu-submenuItemImage imageContainer">
+                            @Html.Sitecore().Field("Image", Subitem)
+                          </div>
+                        }
+                        <h2> @Html.Sitecore().Field("NavigationTitle", Subitem)</h2>
+                        <p></p>
+                      </a>
+
+                      @if (Subitem.TemplateID.ToString() == "{8AADF226-FC14-4F1F-9542-62B826A398A3}")
+                      {
+                        <ul class="menu-submenuLinkItemSubtitles">
+                          @foreach (Sitecore.Data.Items.Item Subsubitem in Subitem.Children)
+                          {
+                            <li>
+                              <a href="@Subsubitem.LinkFieldUrl(Templates.Link.Fields.Link)">@Html.Sitecore().Field("NavigationTitle", Subsubitem)</a>
+                            </li>
+                          }
+                        </ul>
+                      }
+                    </div>
+                  }
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      }
+
+
+
+    </li>
+  }
+
+</ul>
+

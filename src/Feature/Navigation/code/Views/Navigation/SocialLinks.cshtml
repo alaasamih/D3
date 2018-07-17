@@ -1,0 +1,30 @@
+﻿@using Sitecore.Feature.Navigation
+@using Sitecore.Foundation.SitecoreExtensions.Extensions
+@using Sitecore.Data.Items;
+@model Sitecore.Mvc.Presentation.RenderingModel
+<nav>
+  <ul>
+    @foreach (Item item in Model.Item.Children)
+    {
+     
+        <li>
+          <a href="@item.LinkFieldUrl(Templates.Link.Fields.Link)" target="_blank" title="@Html.Sitecore().Field(Templates.Link.Fields.NavigationTitle)">
+            @if (!string.IsNullOrWhiteSpace(item[Templates.LinkIcon.Fields.Icon]))
+            {
+              <span class="visually-hidden">@Html.Sitecore().Field(Templates.Link.Fields.NavigationTitle, item)</span>
+              <svg aria-hidden="true" role="presentation" class="icon icon-@item[Templates.LinkIcon.Fields.Icon]">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/images/icons.svg#icon-@item[Templates.LinkIcon.Fields.Icon]"></use>
+              </svg>
+            }
+            else
+            {
+              @Html.Sitecore().Field(Templates.Link.Fields.NavigationTitle, item)
+            }
+             
+
+          </a>
+        </li>
+      
+    }
+    </ul>
+  </nav>

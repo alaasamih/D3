@@ -1,0 +1,19 @@
+﻿@using Sitecore.Feature.Media
+@using Sitecore.Foundation.SitecoreExtensions.Extensions
+@model Sitecore.Mvc.Presentation.RenderingModel
+<section class="bannerLink">
+  <div class="bannerLink-image" >
+    @Html.Sitecore().ImageField(Templates.HasMedia.Fields.Thumbnail, Model.Item, mw: 1123, mh: 351)
+  </div>
+  <div class="bannerLink-content">
+    <div class="row">
+      <div class="col-md-10 col-md-push-1">
+        <h2>@Html.Sitecore().Field(Templates.HasMedia.Fields.Title,Model.Item)</h2>
+        <p>
+          @Html.Sitecore().Field(Templates.HasMedia.Fields.Description, Model.Item)
+        </p>
+        <p>  @Html.Sitecore().Field(Templates.HasMedia.Fields.Link, Model.Item)</p>
+      </div>
+    </div>
+  </div>
+</section>

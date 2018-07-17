@@ -161,9 +161,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
-    <Content Include="Views\Common\SubLayouts\PageHeader.cshtml" />
-    <Content Include="Views\Common\SubLayouts\PageMain.cshtml" />
-    <Content Include="Views\Common\SubLayouts\PageFooter.cshtml" />
+    <Content Include="Views\Common\SubLayouts\Header.cshtml" />
+    <Content Include="Views\Common\SubLayouts\Footer.cshtml" />
+    <Content Include="Views\Common\SubLayouts\1 Column.cshtml" />
+    <Content Include="Views\Common\SubLayouts\2 Column 4-8.cshtml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

@@ -1,0 +1,13 @@
+﻿@using Sitecore.Feature.Navigation
+@using Sitecore.Foundation.SitecoreExtensions.Extensions
+@model Sitecore.Mvc.Presentation.RenderingModel
+@using Sitecore.Data.Items;
+@{ 
+    var item = Model.Item;
+}
+<a href="@item.LinkFieldUrl(Templates.Link.Fields.Link)" class="subfooter-logoLink" title="Dubai design district homepage">
+  <span class="visually-hidden">Dubai design district logo</span>
+  <svg aria-hidden="true" role="presentation" class="">
+    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/images/icons.svg#icon-@item[Templates.LinkIcon.Fields.Icon]"></use>
+  </svg>
+</a>

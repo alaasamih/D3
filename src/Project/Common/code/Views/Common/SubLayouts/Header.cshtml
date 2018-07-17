@@ -1,0 +1,31 @@
+﻿<style type="text/css">
+
+  #vat-header {
+    display: block;
+    background: black;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    padding: 20px 0px !important;
+    text-transform: uppercase;
+  }
+
+    #vat-header a:link, #vat-header a:visited, #vat-header a:hover {
+      color: white;
+      text-decoration: underline;
+    }
+</style>
+<div id="vat-header">
+  Important VAT Information. <a href="http://tecomgroup.ae/value-added-tax/" target="_blank">Click here</a>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 header-container">
+      @Html.Sitecore().Placeholder("logo-header")
+      <nav class="menu">
+        @Html.Sitecore().Placeholder("nav-header")
+        @Html.Sitecore().Placeholder("topmenu-header")
+      </nav>
+    </div>
+    </div>
+  </div>

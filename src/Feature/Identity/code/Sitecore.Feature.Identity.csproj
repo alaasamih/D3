@@ -26,6 +26,7 @@
     </NuGetPackageImportStamp>
     <TargetFrameworkProfile />
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -119,7 +120,9 @@
     <Content Include="packages.config" />
     <None Include="Properties\PublishProfiles\Local.pubxml" />
     <Content Include="Views\Identity\Logo.cshtml" />
-    <None Include="Views\Web.config" />
+    <None Include="Views\Web.config">
+      <SubType>Designer</SubType>
+    </None>
     <Content Include="Views\Identity\Copyright.cshtml" />
     <Content Include="Views\Identity\ContactInformation.cshtml" />
     <None Include="Web.Debug.config">

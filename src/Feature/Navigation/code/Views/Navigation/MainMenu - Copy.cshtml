@@ -1,0 +1,64 @@
+﻿@using Sitecore.Feature.Navigation
+@using Sitecore.Foundation.SitecoreExtensions.Extensions
+@model Sitecore.Mvc.Presentation.RenderingModel
+<ul class="menu-nav">
+  @if (Model.Item.Children != null)
+  {
+    foreach (var item in Model.Items)
+    {
+      var hasChildren = item.Children != null && item.Children.Items.Any() && item.ShowChildren;
+      var cssClass = "";
+      if (hasChildren)
+      {
+        cssClass += "menu-navItem";
+      }
+      else
+      {
+        cssClass += "menu-navItem menu-navItem-isEmpty";
+      }
+
+      <li class="@cssClass">
+
+        @if (hasChildren)
+        {
+          <a href="javascript: void(0);" class="menu-navItemLabel">
+            @Html.Sitecore().Field(Templates.Navigable.Fields.NavigationTitle, item.Item) <span class="icon icon-arrow-right" aria-hidden="true" role="presentation">
+              <svg>
+                @Html.Sitecore().Field(Templates.Link.Fields.Image, item.Item)
+              </svg>
+            </span>
+          </a>
+          <div class="menu-submenu">
+            <div class="container">
+              <div class="row">
+                <div class="col-xs-12">
+                  <div class="menu-submenuItems">
+                    @foreach (var subitem in item.Children.Items)
+                    {
+                      <div class="menu-submenuItem">
+                        <a href="@subitem.Url">
+                          <div class="menu-submenuItemImage imageContainer" style="background-image: url(&#39;//d3.imgix.net/images/outlets-eat-thumbnail.jpg?q=60&amp;auto=format,compress&amp;w=200&amp;dpr=1&#39;)">
+                            @Html.Sitecore().Field(Templates.Link.Fields.Image, item.Item)
+                          </div>
+                          <h2>@Html.Sitecore().Field(Templates.Navigable.Fields.NavigationTitle, item.Item)</h2>
+                          <p></p>
+                        </a>
+                      </div>
+                    }
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        }
+        else
+        {
+          <a class="menu-navItemLabel" href="@item.Url">
+            @Html.Sitecore().Field(Templates.Navigable.Fields.NavigationTitle, item.Item)
+          </a>
+        }
+      </li>
+    }
+  }
+</ul>
+

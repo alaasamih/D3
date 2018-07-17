@@ -1,0 +1,36 @@
+﻿---
+ID: "5c5f3850-1f01-46c5-b42d-8b80533c3760"
+Parent: "b2f10aba-5d6e-4ef2-b959-3ccc94cc93b1"
+Template: "99f8905d-4a87-4eb8-9f8b-a9bebfb3add6"
+Path: /sitecore/layout/Renderings/Feature/Navigation/LinkList
+DB: master
+SharedFields:
+- ID: "1a7c85e5-dc0b-490d-9187-bb1dbcb4c72f"
+  Hint: Datasource Template
+  Value:  
+- ID: "2e51df70-d3e4-458c-b03a-95c734dd39e7"
+  Hint: Data source
+  Value:  
+- ID: "51b435bc-f7b9-478a-9c51-52916af96ff5"
+  Hint: Path
+  Value: /Views/Navigation/LinkList.cshtml
+- ID: "5a14936f-2100-4541-b700-2f122e88f3f8"
+  Hint: Data source
+  Value: "{50ADEEEB-14D2-4FB2-80D8-9510ECDDE934}"
+- ID: "b5b27af1-25ef-405c-87ce-369b3a004016"
+  Hint: Datasource Location
+  Value:  
+- ID: "ded9e431-3604-4921-a4b3-a6ec7636a5b6"
+  Hint: Controller Action
+  Value: LinkList
+- ID: "e64ad073-dfcc-4d20-8c0b-fe5aa6226cd7"
+  Hint: Controller
+  Value: Sitecore.Feature.Navigation.Controllers.NavigationController, Sitecore.Feature.Navigation
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180713T172147Z

@@ -1,0 +1,47 @@
+﻿@using Sitecore.Data.Items;
+@using Sitecore.Feature.Events
+@using Sitecore.Foundation.SitecoreExtensions.Extensions
+@model Sitecore.Mvc.Presentation.RenderingModel
+
+<div class="row">
+  <div class="col-xs-12">
+    @{ int i = 0;}
+    @foreach (Item item in Model.Item.Children)
+    {
+      i++;
+        <section class="events" data-events-src="/data/events.json?ts=1531721299386">
+          <div class="events-eventItem" id="event-@i" style="">
+            <div class="events-eventItemImage imageContainer" style="background-image: url(&#39;https://d3.imgix.net/events/jam-jar-fantastic-portraits.jpg?q=60&amp;auto=format,compress&amp;w=720&#39;)">
+              @Html.Sitecore().Field(Templates.Event.Fields.Image, item)
+            </div>
+            <div class="events-eventItemDate">
+              <time datetime="@Html.Sitecore().Field(Templates.Event.Fields.StartDate, item, new { format = "dd-MM-yyyy" })">@Html.Sitecore().Field(Templates.Event.Fields.StartDate, item, new { format = "MMM d" })</time>
+              @if (item.Field(Templates.Event.Fields.EndDate).ToString() != string.Empty)
+              {
+                <span class="separator">to</span>
+                <time datetime="@Html.Sitecore().Field(Templates.Event.Fields.EndDate, item, new { format = "dd-MM-yyyy" })">@Html.Sitecore().Field(Templates.Event.Fields.EndDate, item, new { format = "MMM d" })</time>
+              }
+            </div>
+            <div class="events-eventItemDetails events-eventItemDetails-isClipped">
+              <h2>@Html.Sitecore().Field("Title", item)</h2>
+              <h3>@Html.Sitecore().Field("Venue", item)</h3>
+              <p>@Html.Sitecore().Field(Templates.Event.Fields.Description, item)</p>
+              <a class="btn" href="@item.LinkFieldUrl(Templates.EventLink.Fields.Link)" target="_blank">@Html.Sitecore().Field("LinkTitle", item)</a>
+              <div class="events-eventItemActionButtons">
+                <a href="javascript: void(0);" class="events-eventItemActionButton1">Read More</a>
+                <a href="javascript: void(0);" class="events-eventItemActionButton2">Read Less</a>
+              </div>
+            </div>
+          </div>
+          <div class="events-actionsContainer">
+            <button class="events-loadMoreButton" style="display: none;">Load More</button>
+          </div>
+        </section>
+    }
+    <div class="events-eventsTemplates" style="display: none;">
+      <template class="events-eventItemTemplate">
+      </template>
+    </div>
+  </div>
+</div>
+

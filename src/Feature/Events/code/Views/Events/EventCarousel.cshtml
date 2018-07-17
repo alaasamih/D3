@@ -1,0 +1,51 @@
+﻿@using Sitecore.Data.Items;
+@using Sitecore.Feature.Events
+@using Sitecore.Foundation.SitecoreExtensions.Extensions
+@model Sitecore.Mvc.Presentation.RenderingModel
+
+<section class="events-slider slick-initialized slick-slider" data-events-src="/data/events.json?ts=1531116496174">
+  <button class="slick-prev slick-arrow" aria-label="Previous" type="button" style="">Previous</button><div class="slick-list draggable" style="height: 409px;">
+    <div class="slick-track" style="opacity: 1; width: 11040px; transform: translate3d(-736px, 0px, 0px);">
+      @{ int i = 0;}
+      @foreach (Item item in Model.Item.Children)
+      {
+        i++;
+      @*<div class="events-eventItem slick-slide slick-cloned" data-slick-index="@i" aria-hidden="true" style="width: 736px;">*@
+        <div class="events-eventItem slick-slide slick-current slick-active" id="event-@i" data-slick-index="@(i-1)" aria-hidden="false" style="width: 736px;">
+          <div class="events-eventItemImage imageContainer" style="background-image: url(&#39;https://d3.imgix.net/events/i-am-not-afraid-to-fly.jpg?q=60&amp;auto=format,compress&amp;w=720&#39;)">
+            @Html.Sitecore().Field(Templates.Event.Fields.Image, item)
+          </div>
+          <div class="events-eventItem" id="event-@i" style="">
+            <div class="events-eventItemImage imageContainer" style="background-image: url(&#39;https://d3.imgix.net/events/jam-jar-fantastic-portraits.jpg?q=60&amp;auto=format,compress&amp;w=720&#39;)">
+              @Html.Sitecore().Field(Templates.Event.Fields.Image, item)
+            </div>
+            <div class="events-eventItemDate">
+              <time datetime="@Html.Sitecore().Field(Templates.Event.Fields.StartDate, item, new { format = "dd-MM-yyyy" })">@Html.Sitecore().Field(Templates.Event.Fields.StartDate, item, new { format = "MMM d" })</time>
+              @if (item.Field(Templates.Event.Fields.EndDate).ToString() != string.Empty)
+              {
+                <span class="separator">to</span>
+                <time datetime="@Html.Sitecore().Field(Templates.Event.Fields.EndDate, item, new { format = "dd-MM-yyyy" })">@Html.Sitecore().Field(Templates.Event.Fields.EndDate, item, new { format = "MMM d" })</time>
+              }
+            </div>
+            <div class="events-eventItemDetails events-eventItemDetails-isClipped">
+              <h2>@Html.Sitecore().Field("Title", item)</h2>
+              <h3>@Html.Sitecore().Field("Venue", item)</h3>
+              <p>@Html.Sitecore().Field(Templates.Event.Fields.Description, item)</p>
+              <a class="btn" href="@item.LinkFieldUrl(Templates.EventLink.Fields.Link)" target="_blank">@Html.Sitecore().Field("LinkTitle", item)</a>
+              <div class="events-eventItemActionButtons">
+                <a href="http://d3/Events#event-@i" class="events-eventItemActionButton1">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        }
+      </div>
+  </div><button class="slick-next slick-arrow" aria-label="Next" type="button" style="">Next</button>
+</section>
+<div class="events-sliderTemplates" style="display: none;">
+  <template class="events-sliderItemTemplate">
+  </template>
+</div>
+
+ 

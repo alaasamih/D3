@@ -1,0 +1,16 @@
+﻿@using Sitecore.Feature.Navigation
+@using Sitecore.Foundation.SitecoreExtensions.Extensions
+@model Sitecore.Mvc.Presentation.RenderingModel
+@using Sitecore.Data.Items;
+
+<ul>
+  @foreach (Item item in Model.Item.Children)
+  {
+      <li>
+        <a href="@item.LinkFieldUrl(Templates.Link.Fields.Link)">
+          @Html.Sitecore().Field(Templates.Link.Fields.NavigationTitle, item)
+      </a>
+    </li>
+}
+</ul>
+

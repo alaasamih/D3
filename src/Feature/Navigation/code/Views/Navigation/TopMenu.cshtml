@@ -1,0 +1,31 @@
+﻿@using Sitecore.Feature.Navigation
+@using Sitecore.Foundation.SitecoreExtensions.Extensions
+@model Sitecore.Mvc.Presentation.RenderingModel
+@using Sitecore.Data.Items;
+
+
+
+<div class="menu-actions">
+  @foreach (Item item in Model.Item.Children)
+  {
+
+    <div class="menu-liveChat">
+      @if (Html.Sitecore().Field("NavigationTitle", item).ToString() == "Chat To Us")
+      {
+        <button id="liveagent_button_online_573w00000008QV2" href="javascript: void(0);" class="btn menu-liveChatButton menu-liveChatButton-online" onclick="@item.LinkFieldUrl(Templates.Link.Fields.Link)">@Html.Sitecore().Field(Templates.Link.Fields.NavigationTitle, item)</button>
+      }
+      else if (Html.Sitecore().Field("NavigationTitle", item).ToString() == "Offline")
+      {
+        <button id="liveagent_button_offline_573w00000008QV2" href="javascript: void(0);" class="btn menu-liveChatButton menu-liveChatButton-offline" onclick="@item.LinkFieldUrl(Templates.Link.Fields.Link)" style="display: none;">@Html.Sitecore().Field(Templates.Link.Fields.NavigationTitle, item)</button>
+      }
+    </div>
+
+    <div class="menu-subscribe">
+      @if (Html.Sitecore().Field("NavigationTitle", item).ToString() == "Subscribe")
+      {
+        <a href="@item.LinkFieldUrl(Templates.Link.Fields.Link)" class="menu-subscribeButton">@Html.Sitecore().Field(Templates.Link.Fields.NavigationTitle, item)</a>
+      }
+    </div>
+  }
+</div>
+
