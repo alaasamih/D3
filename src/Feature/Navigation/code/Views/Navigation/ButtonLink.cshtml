@@ -1,0 +1,19 @@
+﻿@using Sitecore.Feature.Navigation
+@using Sitecore.Foundation.SitecoreExtensions.Extensions
+@model Sitecore.Mvc.Presentation.RenderingModel
+@using Sitecore.Data.Items;
+   <div class="row">
+    <div class="col-xs-12">
+      <hr class="events-divider" />
+    </div>
+    <div class="col-xs-12">
+      <div class="btn-list">
+        @foreach (Item item in Model.Item.Children)
+        {
+          <a class="btn" href="@item.LinkFieldUrl(Templates.Link.Fields.Link)" target="_blank">
+            @Html.Sitecore().Field(Templates.Link.Fields.NavigationTitle, item)
+          </a>
+        }
+      </div>
+    </div>
+  </div>

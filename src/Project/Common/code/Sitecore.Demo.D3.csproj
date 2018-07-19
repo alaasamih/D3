@@ -165,6 +165,8 @@
     <Content Include="Views\Common\SubLayouts\Footer.cshtml" />
     <Content Include="Views\Common\SubLayouts\1 Column.cshtml" />
     <Content Include="Views\Common\SubLayouts\2 Column 4-8.cshtml" />
+    <Content Include="Views\Common\SubLayouts\2 Column 2-10.cshtml" />
+    <Content Include="Views\Common\SubLayouts\2 Column 6-6.cshtml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

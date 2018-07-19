@@ -142,7 +142,7 @@
     <Content Include="Views\Navigation\SocialLinks.cshtml" />
     <Content Include="Views\Navigation\LinkList.cshtml" />
     <Content Include="Views\Navigation\LogoFooter.cshtml" />
-    <Content Include="Views\Navigation\EventLink.cshtml" />
+    <Content Include="Views\Navigation\ButtonLink.cshtml" />
     <None Include="Views\Web.config" />
     <Content Include="Views\Navigation\TopMenu.cshtml" />
     <Content Include="Views\Navigation\MainMenu.cshtml" />

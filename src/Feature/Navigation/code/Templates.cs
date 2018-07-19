@@ -26,5 +26,16 @@
 
       }
     }
+
+    public struct LinkImage
+    {
+      public static readonly ID ID = new ID("{007CAFCF-C0A6-4EB1-87B2-B35130256500}");
+
+      public struct Fields
+      {
+        public static readonly ID Image = new ID("{19C8DA4D-B22F-4C87-9332-D5609C863489}");
+
+      }
+    }
   }
 }

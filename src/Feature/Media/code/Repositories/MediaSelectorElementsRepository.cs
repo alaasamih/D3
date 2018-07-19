@@ -22,7 +22,7 @@
       var active = "active";
       foreach (var child in items)
       {
-        if (child[Templates.HasMedia.Fields.Thumbnail].IsEmptyOrNull())
+        if (child[Templates.HasMediaImage.Fields.Image].IsEmptyOrNull())
         {
           continue;
         }

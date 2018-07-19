@@ -1,0 +1,82 @@
+﻿@using Sitecore.Data.Items;
+@using Sitecore.Feature.Outlet
+@using Sitecore.Foundation.SitecoreExtensions.Extensions
+@model Sitecore.Mvc.Presentation.RenderingModel
+
+
+<div class="outlets-list">
+  @foreach (Item item in Model.Item.Children)
+  {
+    if (Request.QueryString["type"] !=null)
+    {
+
+      if (Request.QueryString["type"] == item[Templates.Outlet.Fields.Value])
+        { 
+      <article class="outlets-listItem" data-name="@Html.Sitecore().Field(Templates.Outlet.Fields.Title, item)" data-category="@Html.Sitecore().Field(Templates.Outlet.Fields.Value, item)">
+        <div class="outlets-listItemImage imageContainer">
+          @Html.Sitecore().Field(Templates.Outlet.Fields.Image, item)
+        </div>
+        <div class="outlets-listItemDetails">
+          <h3> @Html.Sitecore().Field(Templates.Outlet.Fields.Title, item)</h3>
+          <a class="outlets-listItemDetailsDownloadButton" href="@item.LinkFieldUrl(Templates.Outlet.Fields.DocumentLink)" target="_blank">@Html.Sitecore().Field(Templates.Outlet.Fields.DocumentName, item)</a>
+          <div class="outlets-listItemDetailsContent">
+            <p>
+              @Html.Sitecore().Field(Templates.Outlet.Fields.Description, item)
+            </p>
+          </div>
+          <p class="outlets-listItemDetailsOpeningHours">@Html.Sitecore().Field(Templates.Outlet.Fields.OpeningHours, item)</p>
+          <address>
+            <p>@Html.Sitecore().Field(Templates.Outlet.Fields.Address)</p>
+            <p class="outlets-listItemDetailsTelephone">Tel:@Html.Sitecore().Field(Templates.Outlet.Fields.Telephone, item)</p>
+          </address>
+          <ul class="outlets-listItemDetailsSocial">
+            <li class="outlets-listItemDetailsSocial" data-type="Website">
+              <a href="@item.LinkFieldUrl(Templates.Outlet.Fields.Link)">
+                <span class="visually-hidden">@Html.Sitecore().Field(Templates.Outlet.Fields.Website, item)</span>
+                <svg aria-hidden="true" role="presentation" class="icon icon-website">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/images/icons.svg#icon-website"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </article>
+         }
+    }
+
+    else
+    {
+      <article class="outlets-listItem" data-name="@Html.Sitecore().Field(Templates.Outlet.Fields.Title, item)" data-category="@Html.Sitecore().Field(Templates.Outlet.Fields.Value, item)">
+        <div class="outlets-listItemImage imageContainer">
+          @Html.Sitecore().Field(Templates.Outlet.Fields.Image, item)
+        </div>
+        <div class="outlets-listItemDetails">
+          <h3> @Html.Sitecore().Field(Templates.Outlet.Fields.Title, item)</h3>
+          <a class="outlets-listItemDetailsDownloadButton" href="@item.LinkFieldUrl(Templates.Outlet.Fields.DocumentLink)" target="_blank">@Html.Sitecore().Field(Templates.Outlet.Fields.DocumentName, item)</a>
+          <div class="outlets-listItemDetailsContent">
+            <p>
+              @Html.Sitecore().Field(Templates.Outlet.Fields.Description, item)
+            </p>
+          </div>
+          <p class="outlets-listItemDetailsOpeningHours">@Html.Sitecore().Field(Templates.Outlet.Fields.OpeningHours, item)</p>
+          <address>
+            <p>@Html.Sitecore().Field(Templates.Outlet.Fields.Address)</p>
+            <p class="outlets-listItemDetailsTelephone">Tel:@Html.Sitecore().Field(Templates.Outlet.Fields.Telephone, item)</p>
+          </address>
+          <ul class="outlets-listItemDetailsSocial">
+            <li class="outlets-listItemDetailsSocial" data-type="Website">
+              <a href="@item.LinkFieldUrl(Templates.Outlet.Fields.Link)">
+                <span class="visually-hidden">@Html.Sitecore().Field(Templates.Outlet.Fields.Website, item)</span>
+                <svg aria-hidden="true" role="presentation" class="icon icon-website">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/images/icons.svg#icon-website"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </article>
+    }
+  }
+
+
+</div>

@@ -132,6 +132,9 @@
     <Content Include="packages.config" />
     <None Include="Properties\PublishProfiles\Local.pubxml" />
     <Content Include="Views\PageContent\PageTeaser.cshtml" />
+    <Content Include="Views\PageContent\PageAbout.cshtml" />
+    <Content Include="Views\PageContent\PageAboutImage.cshtml" />
+    <Content Include="Views\PageContent\PageCo-working.cshtml" />
     <None Include="Views\Web.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

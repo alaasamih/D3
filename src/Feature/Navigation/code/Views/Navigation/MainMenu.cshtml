@@ -8,8 +8,8 @@
 
   @foreach (Sitecore.Data.Items.Item item in Model.Item.Children)
   {
-    <li class="menu-navItem@(item.TemplateID.ToString()=="{6C47918B-4D58-4CF0-831D-E5A7CE022986}"? " menu-navItem-isEmpty": string.Empty) ">
-      @if (item.TemplateID.ToString() == "{6C47918B-4D58-4CF0-831D-E5A7CE022986}")
+    <li class="menu-navItem@(item.TemplateID.ToString()=="{627BEACC-8636-45AD-A0AC-FD0C544B08B7}"? " menu-navItem-isEmpty": string.Empty)">
+      @if (item.TemplateID.ToString() == "{627BEACC-8636-45AD-A0AC-FD0C544B08B7}")
       {
         <a href="@item.LinkFieldUrl(Templates.Link.Fields.Link)" class="menu-navItemLabel">
           @Html.Sitecore().Field("NavigationTitle", item) <span class="icon icon-arrow-right" aria-hidden="true" role="presentation">
@@ -42,13 +42,13 @@
 
                   @foreach (Sitecore.Data.Items.Item Subitem in item.Children)
                   {
-                    <div class="@(Subitem.TemplateID.ToString()=="{6C47918B-4D58-4CF0-831D-E5A7CE022986}"?"menu-submenuItem":"menu-submenuLinkItem") ">
+                    <div class="@(Subitem.TemplateID.ToString()=="{F28B341F-D0A0-4B20-9765-9F4AF61932DB}"?"menu-submenuItem":"menu-submenuLinkItem") ">
 
                       <a href="@Subitem.LinkFieldUrl(Templates.Link.Fields.Link)">
-                        @if (Subitem.TemplateID.ToString() == "{6C47918B-4D58-4CF0-831D-E5A7CE022986}")
+                        @if (Subitem.TemplateID.ToString() == "{F28B341F-D0A0-4B20-9765-9F4AF61932DB}")
                         {
                           <div class="menu-submenuItemImage imageContainer">
-                            @Html.Sitecore().Field("Image", Subitem)
+                            @Html.Sitecore().Field(Templates.LinkImage.Fields.Image, Subitem)
                           </div>
                         }
                         <h2> @Html.Sitecore().Field("NavigationTitle", Subitem)</h2>

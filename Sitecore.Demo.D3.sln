@@ -74,9 +74,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Events", "Events", "{899E4B
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Feature.Events", "src\Feature\Events\code\Sitecore.Feature.Events.csproj", "{94491204-87B8-4D17-A91C-26B9672E2AFC}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Outlet", "Outlet", "{B23D52A6-16C6-4C2D-ADEE-CF81DCDA4E6A}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Outlets", "Outlets", "{B23D52A6-16C6-4C2D-ADEE-CF81DCDA4E6A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Feature.Outlet", "src\Feature\Outlet\code\Sitecore.Feature.Outlet.csproj", "{2B700DE8-9EA6-4C3F-B2F4-9C33A62263D1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Feature.Outlets", "src\Feature\Outlets\code\Sitecore.Feature.Outlets.csproj", "{2B700DE8-9EA6-4C3F-B2F4-9C33A62263D1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -13,7 +13,6 @@
       {
         public static readonly ID Title = new ID("{4B55B6BE-F78C-475E-A276-3C8B214D034E}");
         public static readonly ID Description = new ID("{598BD8FE-22C8-4ADC-8D48-B93560CB5942}");
-        public static readonly ID Thumbnail = new ID("{3EB2E564-BB07-450E-AEDA-B55AFF3EC4E3}");
         public static readonly ID Link = new ID("{18976E30-5E8E-4C13-885B-27EA274DA9A7}");
       }
     }
