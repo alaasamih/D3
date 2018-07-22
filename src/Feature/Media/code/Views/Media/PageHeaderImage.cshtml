@@ -8,14 +8,20 @@
   <div class="col-xs-12">
     <div class="heroBanner  ">
       <div class="heroBanner-image  ">
-        @Html.Sitecore().ImageField(Templates.HasMediaImage.Fields.Image,Model.Item,mh:1123,mw:510)
+        @Html.Sitecore().ImageField(Templates.HasMediaImage.Fields.Image, Model.Item, mh: 1123, mw: 510)
       </div>
-        <div class="heroBanner-content">
-          <h1>@Html.Sitecore().Field(Templates.HasMedia.Fields.Title, Model.Item)</h1>
-          <p>
-            @Html.Sitecore().Field(Templates.HasMedia.Fields.Description, Model.Item)
-          </p>
-        </div>
+     @if((Html.Sitecore().Field(Templates.HasMedia.Fields.Title, Model.Item)).ToString() != string.Empty )
+     { 
+      <div class="heroBanner-content">
+        <h1>@Html.Sitecore().Field(Templates.HasMedia.Fields.Title, Model.Item)</h1>
+        <p>
+          @Html.Sitecore().Field(Templates.HasMedia.Fields.Description, Model.Item)
+        </p>
+        <p>
+          @Html.Sitecore().Field(Templates.HasMedia.Fields.Link, Model.Item)
+        </p>
+      </div>
+     }
     </div>
   </div>
 </div>

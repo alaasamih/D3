@@ -1,13 +1,13 @@
 ﻿---
-ID: "dcffc9a8-acb9-44e3-8bdc-7d8bf21eebe1"
-Parent: "d5d2ab0a-3909-4e22-af15-3bef1e97a0c0"
+ID: "e794bfd0-fdf9-4b3c-93ef-4028508462fe"
+Parent: "015ca5fa-63ea-40b5-91eb-7e381bc6a64c"
 Template: "99f8905d-4a87-4eb8-9f8b-a9bebfb3add6"
-Path: "/sitecore/layout/Renderings/Feature/PageContent/PageCo-working"
+Path: /sitecore/layout/Renderings/Feature/Outlets/OutletFilter
 DB: master
 SharedFields:
 - ID: "51b435bc-f7b9-478a-9c51-52916af96ff5"
   Hint: Path
-  Value: "/Views/PageContent/PageCo-working.cshtml"
+  Value: /Views/Outlets/OutletFilter.cshtml
 Languages:
 - Language: en
   Versions:
@@ -15,4 +15,4 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20180718T095643Z
+      Value: 20180717T131456Z

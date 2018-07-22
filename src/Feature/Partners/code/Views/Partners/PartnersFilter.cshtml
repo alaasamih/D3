@@ -1,0 +1,20 @@
+﻿@using Sitecore.Feature.Partners
+@using Sitecore.Foundation.SitecoreExtensions.Extensions
+@model Sitecore.Mvc.Presentation.RenderingModel
+@using Sitecore.Data.Items;
+<title>
+  Dubai Design District | Business Partners
+</title>
+
+<ul class="partners-filterList" data-selected-index="0">
+  @foreach (Item item in Model.Item.Children)
+  {
+    var value = (item.Database.GetItem(((Sitecore.Data.Fields.LinkField)item.Fields[Templates.FilterPartners.Fields.FilterValue]).Value).Name);
+    <li class="@(value ==Request.QueryString["type"] ? "partners-filterListItem active": "partners-filterListItem")" data-value="@value">
+      <a href="@item.LinkFieldUrl(Templates.FilterPartners.Fields.FilterLink)?type=@value" class="partners-filterListItemButton">
+        <span>@value</span>
+      </a>
+    </li>
+  }
+</ul>
+<div class="partners-filterSelector active" style="top: 21.5px; left: 59.7266px;"></div>

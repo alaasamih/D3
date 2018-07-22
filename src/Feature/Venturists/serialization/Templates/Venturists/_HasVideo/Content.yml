@@ -1,0 +1,18 @@
+﻿---
+ID: "8e958746-99ee-4924-acc4-a5c86b105139"
+Parent: "9a191f46-3f55-47ac-9730-0445b0698567"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: /sitecore/templates/Feature/Venturists/_HasVideo/Content
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180722T052647Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

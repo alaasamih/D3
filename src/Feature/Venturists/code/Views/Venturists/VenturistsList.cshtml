@@ -1,0 +1,27 @@
+﻿@using Sitecore.Data.Items;
+@using Sitecore.Feature.Venturists
+@using Sitecore.Foundation.SitecoreExtensions.Extensions
+@model Sitecore.Mvc.Presentation.RenderingModel
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>
+    Dubai Design District | The Venturists by d3
+  </title>
+</head>
+
+<div class="row common-page-row">
+  <h1>@Html.Sitecore().Field(Templates.PageHeader.Fields.Title, Model.Item)</h1>
+  <p>@Html.Sitecore().Field(Templates.PageHeader.Fields.Summary, Model.Item)</p>
+</div>
+@foreach (Item item in Model.Item.Children)
+{
+  <div class="row common-page-row">
+      <h2>@item[Templates.Video.Fields.Title]</h2>
+      <p></p><blockquote>@item[Templates.Video.Fields.Summary]</blockquote>
+             <p></p>
+      <div class="video-embedded playing">
+        <iframe src="@item.LinkFieldUrl(Templates.Video.Fields.VideoLink)" width="1123" height="631" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
+      </div>
+   </div>
+}

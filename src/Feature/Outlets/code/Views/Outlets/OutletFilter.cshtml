@@ -5,10 +5,11 @@
 <ul class="outlets-filterList" data-selected-index="0">
   @foreach (Item item in Model.Item.Children)
   {
-    <li class="@((item[Templates.FilterOutlet.Fields.FilterValue]) ==Request.QueryString["type"] ? "outlets-filterListItem active": "outlets-filterListItem")" data-value="@Html.Sitecore().Field(Templates.FilterOutlet.Fields.FilterName, item)">
-      @Html.Sitecore().BeginField(Templates.FilterOutlet.Fields.FilterLink.ToString(), item, new { haschildren = true })
-      <span> @Html.Sitecore().Field(Templates.FilterOutlet.Fields.FilterName, item)</span>
+    var value = (item.Database.GetItem(((Sitecore.Data.Fields.LinkField)item.Fields["FilterValue"]).Value).Name);
+  <li class="@(value == Request.QueryString["type"] ? "outlets-filterListItem active": "outlets-filterListItem")" data-value="@(item.Database.GetItem(((Sitecore.Data.Fields.LinkField)item.Fields["FilterValue"]).Value).Name)">
+    @Html.Sitecore().BeginField(Templates.FilterOutlet.Fields.FilterLink.ToString(), item, new { haschildren = true })
+    <span>@value</span>
       @Html.Sitecore().EndField()
-    </li>
+  </li>
   }
 </ul>

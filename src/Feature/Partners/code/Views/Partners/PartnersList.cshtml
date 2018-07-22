@@ -1,0 +1,71 @@
+﻿@using Sitecore.Feature.Partners
+@using Sitecore.Foundation.SitecoreExtensions.Extensions
+@model Sitecore.Mvc.Presentation.RenderingModel
+@using Sitecore.Data.Items;
+<head>
+  <script>
+    $(document).ready(function () {
+      getPartners("All");
+    });
+    function getPartners(letter, contextSite) {
+      $.get("/api/sitecore/Partners/GetPartners?letter=" + letter, function (data) {
+        $("#divPartners").html(data);
+
+      });
+    }
+  </script>
+  <title>
+    Dubai Design District | Business Partners
+  </title>
+</head>
+<ul class="partners-filterList" data-selected-index="0">
+  <li class="partners-filterListItem " data-value="All">
+    <a href="javascrpt:void(0);" class="partners-filterListItemButton" onclick="getPartners('All'); return false;">ALL</a>
+  </li>
+  <li class="partners-filterListItem " data-value="A">
+    <a href="javascrpt:void(0);" class="partners-filterListItemButton" onclick="getPartners('A'); return false;">A</a>
+  </li>
+  <li class="partners-filterListItem " data-value="B">
+    <a href="javascrpt:void(0);" class="partners-filterListItemButton" onclick="getPartners('B'); return false;">B</a>
+  </li>
+  <li class="partners-filterListItem " data-value="C">
+    <a href="javascrpt:void(0);" class="partners-filterListItemButton" onclick="getPartners('C'); return false;">D</a>
+  </li>
+  <li class="partners-filterListItem " data-value="D">
+    <a href="javascrpt:void(0);" class="partners-filterListItemButton" onclick="getPartners('D'); return false;">E</a>
+  </li>
+
+</ul>
+<div class="partners-list" id="divPartners">
+    @foreach (Item item in Model.Item.Children)
+    {
+      var value = (item.Database.GetItem(((Sitecore.Data.Fields.LinkField)item.Fields[Templates.Partners.Fields.Value]).Value).Name);
+         <div class="partners-listItem visible" data-id="BP96" data-prefix="#" data-name="(NDIGITEC)Namma Int’l Digitec FZ-LLC" data-category="Ancillary Services">
+          <div class="partners-listItemDetails">
+            <div class="partners-listItemDetailsContent">
+              <h3>@item[Templates.Partners.Fields.Title]</h3>
+              <address>
+                @item[Templates.Partners.Fields.Address]<br>
+                <a href="tel://@item[Templates.Partners.Fields.Telephone]">@item[Templates.Partners.Fields.Telephone]</a>
+              </address>
+            </div>
+            <ul class="partners-listItemDetailsSocial">
+              @if (item[Templates.Partners.Fields.Link] != string.Empty)
+              {
+                <li class="partners-listItemDetailsSocialWebsite">
+                  <a href=" @item[Templates.Partners.Fields.Link]" target="_blank" rel="noopener">
+                    <span class="visually-hidden">Website</span>
+                    <svg aria-hidden="true" role="presentation" class="icon icon-website">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/images/icons.svg#icon-website"></use>
+                    </svg>
+                  </a>
+                </li>
+              }
+            </ul>
+          </div>
+        </div>
+     }
+  </div>
+@*<div id="divPartners" class="partners-list">
+
+</div>*@

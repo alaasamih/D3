@@ -7,12 +7,12 @@
 <div class="outlets-list">
   @foreach (Item item in Model.Item.Children)
   {
+    var value = (item.Database.GetItem(((Sitecore.Data.Fields.LinkField)item.Fields[Templates.Outlet.Fields.Value]).Value).Name);
     if (Request.QueryString["type"] !=null)
     {
-
-      if (Request.QueryString["type"] == item[Templates.Outlet.Fields.Value])
-        { 
-      <article class="outlets-listItem" data-name="@Html.Sitecore().Field(Templates.Outlet.Fields.Title, item)" data-category="@Html.Sitecore().Field(Templates.Outlet.Fields.Value, item)">
+      if (Request.QueryString["type"] == value)
+      {
+      <article class="outlets-listItem" data-name="@Html.Sitecore().Field(Templates.Outlet.Fields.Title, item)" data-category="@value">
         <div class="outlets-listItemImage imageContainer">
           @Html.Sitecore().Field(Templates.Outlet.Fields.Image, item)
         </div>
@@ -46,7 +46,7 @@
 
     else
     {
-      <article class="outlets-listItem" data-name="@Html.Sitecore().Field(Templates.Outlet.Fields.Title, item)" data-category="@Html.Sitecore().Field(Templates.Outlet.Fields.Value, item)">
+      <article class="outlets-listItem" data-name="@Html.Sitecore().Field(Templates.Outlet.Fields.Title, item)" data-category="@value">
         <div class="outlets-listItemImage imageContainer">
           @Html.Sitecore().Field(Templates.Outlet.Fields.Image, item)
         </div>

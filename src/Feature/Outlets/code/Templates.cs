@@ -45,9 +45,6 @@
       {
 
         public static readonly ID FilterLink = new ID("{40FE7A7F-0426-475C-85EF-7391FC9B74B1}");
-
-        public static readonly ID FilterName = new ID("{A83C1A51-04A3-44C4-8EEB-6100E8DAC687}");
-
         public static readonly ID FilterValue = new ID("{8A31B011-01A4-4FE1-B42C-DB0A04A3DDB6}");
       }
     }
