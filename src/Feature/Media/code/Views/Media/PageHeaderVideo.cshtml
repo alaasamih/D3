@@ -1,0 +1,26 @@
+﻿@using Sitecore.Feature.Media
+@using Sitecore.Foundation.SitecoreExtensions.Extensions
+@model Sitecore.Mvc.Presentation.RenderingModel
+@{
+  var item = Model.Item;
+}
+<div class="row common-page-row">
+  <section>
+    <div class="heroBanner heroBanner-hasVideo heroBanner-innerPage heroBanner-isVideoPlaying">
+      <div class="heroBanner-video">
+        <div class="heroBanner-videoYouTube" data-youtube-id="w_Dh9aVKpKw">
+          <iframe id="YouTubeVideo_1" frameborder="0" allowfullscreen="1" allow="autoplay; encrypted-media" title="YouTube video player" width="640" height="390" src="@item.LinkFieldUrl(Templates.HasMediaVideo.Fields.VideoLink)">
+          </iframe>
+        </div>
+      </div>
+      <button class="heroBanner-videoPlayButton">
+        <span class="visually-hidden">Play</span>
+        <span class="icon icon-play" aria-hidden="true" role="presentation">
+          <svg>
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/images/icons.svg#icon-play"></use>
+          </svg>
+        </span>
+      </button>
+    </div>
+  </section>
+</div>

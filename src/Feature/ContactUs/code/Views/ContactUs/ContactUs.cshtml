@@ -1,0 +1,13 @@
+﻿@using Sitecore.Feature.ContactUs
+@using Sitecore.Foundation.SitecoreExtensions.Extensions
+@model Sitecore.Mvc.Presentation.RenderingModel
+
+<head>
+  <title>
+    Dubai Design District | Get in Touch
+  </title>
+</head>
+<p style="text-align: center">
+  @Html.Sitecore().Field(Templates.ContactUs.Fields.Info, Model.Item)
+</p>
+

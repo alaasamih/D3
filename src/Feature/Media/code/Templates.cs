@@ -36,6 +36,14 @@
         public static readonly ID Image = new ID("{47C5FE69-E903-488C-AEA9-84AB644BEF72}");
       }
     }
+    public struct HasMediaVideo
+    {
+      public static readonly ID ID = new ID("{D2098210-2C02-43B5-A3B2-8083756BD02C}");
 
+      public struct Fields
+      {
+        public static readonly ID VideoLink = new ID("{2CD487B9-1902-4A8B-B6F2-88E5082153A2}");
+      }
+    }
   }
 }

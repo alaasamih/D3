@@ -1,20 +1,39 @@
-﻿@using Sitecore.Feature.Partners
-@using Sitecore.Foundation.SitecoreExtensions.Extensions
+﻿
 @model Sitecore.Mvc.Presentation.RenderingModel
-@using Sitecore.Data.Items;
-<title>
-  Dubai Design District | Business Partners
-</title>
+  <title>
+    Dubai Design District | Business Partners
+  </title>
+  <script>
+    $(document).ready(function () {
+      getPartners("All");
+    });
+    function getPartners(letter, contextSite) {
+      $.get("/api/sitecore/Partners/GetPartners?letter=" + letter, function (data) {
+        $("#divPartners").html(data);
+
+      });
+    }
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="~/Script/Parent.js"></script>
 
 <ul class="partners-filterList" data-selected-index="0">
-  @foreach (Item item in Model.Item.Children)
-  {
-    var value = (item.Database.GetItem(((Sitecore.Data.Fields.LinkField)item.Fields[Templates.FilterPartners.Fields.FilterValue]).Value).Name);
-    <li class="@(value ==Request.QueryString["type"] ? "partners-filterListItem active": "partners-filterListItem")" data-value="@value">
-      <a href="@item.LinkFieldUrl(Templates.FilterPartners.Fields.FilterLink)?type=@value" class="partners-filterListItemButton">
-        <span>@value</span>
-      </a>
-    </li>
-  }
+  <li class="partners-filterListItem " data-value="All">
+    <a href="javascrpt:void(0);" class="partners-filterListItemButton" onclick="getPartners('All'); return false;">ALL</a>
+  </li>
+  <li class="partners-filterListItem " data-value="A">
+    <a href="javascrpt:void(0);" class="partners-filterListItemButton" onclick="getPartners('A'); return false;">A</a>
+  </li>
+  <li class="partners-filterListItem " data-value="B">
+    <a href="javascrpt:void(0);" class="partners-filterListItemButton" onclick="getPartners('B'); return false;">B</a>
+  </li>
+  <li class="partners-filterListItem " data-value="C">
+    <a href="javascrpt:void(0);" class="partners-filterListItemButton" onclick="getPartners('C'); return false;">D</a>
+  </li>
+  <li class="partners-filterListItem " data-value="D">
+    <a href="javascrpt:void(0);" class="partners-filterListItemButton" onclick="getPartners('D'); return false;">E</a>
+  </li>
 </ul>
-<div class="partners-filterSelector active" style="top: 21.5px; left: 59.7266px;"></div>
+<div id="divPartners" class="partners-list">
+
+</div>

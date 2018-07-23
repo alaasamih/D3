@@ -1,0 +1,21 @@
+﻿---
+ID: "9c0067db-86a1-4049-a5d8-e1f9ff1ba3b9"
+Parent: "c2b38ab2-8382-4998-bf34-b07e5c912121"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: /sitecore/templates/Feature/Nightlife/_HasRestaurant/Restaurant/Image
+DB: master
+SharedFields:
+- ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
+  Hint: Type
+  Value: Image
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 300
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180723T063235Z

@@ -1,0 +1,16 @@
+﻿@using Sitecore.Feature.PageContent
+@using Sitecore.Foundation.SitecoreExtensions.Extensions
+@model Sitecore.Mvc.Presentation.RenderingModel
+ 
+<div class="about-section-wrapper">
+  <div class="row about-section">
+    <div class="col-md-6 about-textWrapper">
+      <p class="about-text">
+        @Html.Sitecore().Field(Templates.HasPageContent.Fields.Summary, Model.Item)
+      </p>
+    </div>
+    <div class="col-md-6 about-image">
+      @Html.Sitecore().ImageField(Templates.HasImage.Fields.Image, Model.Item)
+    </div>
+  </div>
+  </div>

@@ -134,6 +134,7 @@
     <Content Include="Views\Media\PageImage.cshtml" />
     <Content Include="Views\Media\PageHeaderCarousel.cshtml" />
     <Content Include="Views\Media\PageHeaderImage.cshtml" />
+    <Content Include="Views\Media\PageHeaderVideo.cshtml" />
     <None Include="Views\Web.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

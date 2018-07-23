@@ -1,0 +1,8 @@
+﻿@using Sitecore.Foundation.SitecoreExtensions.Extensions
+@model Sitecore.Mvc.Presentation.RenderingModel
+<div class="row">
+  <div class="col-xs-12">
+    @Html.Sitecore().DynamicPlaceholder("form", Model.Rendering.GetUseStaticPlaceholderNames())
+  </div>
+</div>
+

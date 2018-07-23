@@ -1,0 +1,18 @@
+﻿---
+ID: "13ee19b1-461e-44a8-b805-d2a1a18be0d7"
+Parent: "afaefe3e-edf9-41a7-823d-1f9e6ec1a08c"
+Template: "99f8905d-4a87-4eb8-9f8b-a9bebfb3add6"
+Path: /sitecore/layout/Renderings/Feature/ContactUs/Contact Us
+DB: master
+SharedFields:
+- ID: "51b435bc-f7b9-478a-9c51-52916af96ff5"
+  Hint: Path
+  Value: /Views/ContactUs/ContactUs.cshtml
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180722T091558Z
