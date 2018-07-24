@@ -1,0 +1,18 @@
+﻿---
+ID: "ad4b71e8-cd9b-4848-a72a-d1c13e656de5"
+Parent: "df750abd-5da3-430d-bfdc-462ab7785f93"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: /sitecore/templates/Feature/Urban/_HasContent/Content
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180723T113244Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

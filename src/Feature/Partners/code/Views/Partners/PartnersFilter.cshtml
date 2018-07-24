@@ -1,21 +1,11 @@
 ﻿
 @model Sitecore.Mvc.Presentation.RenderingModel
-  <title>
-    Dubai Design District | Business Partners
-  </title>
-  <script>
-    $(document).ready(function () {
-      getPartners("All");
-    });
-    function getPartners(letter, contextSite) {
-      $.get("/api/sitecore/Partners/GetPartners?letter=" + letter, function (data) {
-        $("#divPartners").html(data);
+<title>
+  Dubai Design District | Business Partners
+</title>
 
-      });
-    }
-  </script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="~/Script/Parent.js"></script>
+<script src="~/Script/Parent.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 <ul class="partners-filterList" data-selected-index="0">
   <li class="partners-filterListItem " data-value="All">
@@ -28,12 +18,12 @@
     <a href="javascrpt:void(0);" class="partners-filterListItemButton" onclick="getPartners('B'); return false;">B</a>
   </li>
   <li class="partners-filterListItem " data-value="C">
-    <a href="javascrpt:void(0);" class="partners-filterListItemButton" onclick="getPartners('C'); return false;">D</a>
+    <a href="javascrpt:void(0);" class="partners-filterListItemButton" onclick="getPartners('C'); return false;">C</a>
   </li>
   <li class="partners-filterListItem " data-value="D">
-    <a href="javascrpt:void(0);" class="partners-filterListItemButton" onclick="getPartners('D'); return false;">E</a>
+    <a href="javascrpt:void(0);" class="partners-filterListItemButton" onclick="getPartners('D'); return false;">D</a>
+  </li>
+  <li class="partners-filterListItem " data-value="E">
+    <a href="javascrpt:void(0);" class="partners-filterListItemButton" onclick="getPartners('E'); return false;">E</a>
   </li>
 </ul>
-<div id="divPartners" class="partners-list">
-
-</div>

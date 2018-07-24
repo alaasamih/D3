@@ -94,6 +94,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Nightlife", "Nightlife", "{
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Feature.Nightlife", "src\Feature\Nightlife\code\Sitecore.Feature.Nightlife.csproj", "{18CB3AB5-47BD-4EAE-9283-103038D3DEB2}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Urban", "Urban", "{6EAF51A3-718D-4852-814E-CC425C2E6A81}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Feature.Urban", "src\Feature\Urban\code\Sitecore.Feature.Urban.csproj", "{63BE94DE-DCDA-4041-85B1-F29E7FDCA8CD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -172,6 +176,10 @@ Global
 		{18CB3AB5-47BD-4EAE-9283-103038D3DEB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{18CB3AB5-47BD-4EAE-9283-103038D3DEB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{18CB3AB5-47BD-4EAE-9283-103038D3DEB2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63BE94DE-DCDA-4041-85B1-F29E7FDCA8CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63BE94DE-DCDA-4041-85B1-F29E7FDCA8CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63BE94DE-DCDA-4041-85B1-F29E7FDCA8CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63BE94DE-DCDA-4041-85B1-F29E7FDCA8CD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -213,6 +221,8 @@ Global
 		{2D9E8C7A-77AC-462A-BFFC-E3D57C54AC73} = {E889876F-F239-42E1-AB3D-F12E426A74B2}
 		{307CDFF9-157B-46B2-B008-0378C4D31D8E} = {F0B4745C-13FB-4D0B-99EF-FEC87FFB9152}
 		{18CB3AB5-47BD-4EAE-9283-103038D3DEB2} = {307CDFF9-157B-46B2-B008-0378C4D31D8E}
+		{6EAF51A3-718D-4852-814E-CC425C2E6A81} = {F0B4745C-13FB-4D0B-99EF-FEC87FFB9152}
+		{63BE94DE-DCDA-4041-85B1-F29E7FDCA8CD} = {6EAF51A3-718D-4852-814E-CC425C2E6A81}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D5BA27B1-5009-49D1-BBDE-A3C73AD2F281}

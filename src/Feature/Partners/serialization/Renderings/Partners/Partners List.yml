@@ -1,13 +1,19 @@
 ﻿---
 ID: "4130b76b-5d4b-41ab-84f3-069e0218bcff"
 Parent: "59efcde1-6ac0-49a0-8432-e7651574fd2d"
-Template: "99f8905d-4a87-4eb8-9f8b-a9bebfb3add6"
+Template: "2a3e91a0-7987-44b5-ab34-35c2d9de83b9"
 Path: /sitecore/layout/Renderings/Feature/Partners/Partners List
 DB: master
 SharedFields:
 - ID: "51b435bc-f7b9-478a-9c51-52916af96ff5"
   Hint: Path
   Value: /Views/Partners/PartnersList.cshtml
+- ID: "ded9e431-3604-4921-a4b3-a6ec7636a5b6"
+  Hint: Controller Action
+  Value: GetPartners
+- ID: "e64ad073-dfcc-4d20-8c0b-fe5aa6226cd7"
+  Hint: Controller
+  Value: Sitecore.Feature.Partners.Controllers.PartnersController, Sitecore.Feature.Partners
 Languages:
 - Language: en
   Versions:

@@ -1,0 +1,20 @@
+﻿@using Sitecore.Data.Items;
+@using Sitecore.Feature.Urban
+@using Sitecore.Foundation.SitecoreExtensions.Extensions
+@model Sitecore.Mvc.Presentation.RenderingModel
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>
+    Dubai Design District | Urban Commissions
+  </title>
+</head>
+
+<div class="col-md-9 col-centered">
+  @Html.Sitecore().Field(Templates.Content.Fields.Discription, Model.Item)
+  @foreach (Item item in Model.Item.Children)
+  {
+    @Html.Sitecore().Field(Templates.Image.Fields.Image, item, new { w = 832, h = 569 })
+    @Html.Sitecore().Field(Templates.Image.Fields.Summary,item)
+  }
+</div>

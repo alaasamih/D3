@@ -1,37 +1,36 @@
 ﻿@using Sitecore.Feature.Partners
-@using Sitecore.Foundation.SitecoreExtensions.Extensions
-@model Sitecore.Mvc.Presentation.RenderingModel
 @using Sitecore.Data.Items;
+@model IEnumerable<Sitecore.Feature.Partners.Models.PartnersList>
 <title>
   Dubai Design District | Business Partners
 </title>
 <div class="partners-list" id="divPartners">
-    @foreach (Item item in Model.Item.Children)
-    {
-      var value = (item.Database.GetItem(((Sitecore.Data.Fields.LinkField)item.Fields[Templates.Partners.Fields.Value]).Value).Name);
-         <div class="partners-listItem visible" data-id="BP96" data-prefix="#" data-name="(NDIGITEC)Namma Int’l Digitec FZ-LLC" data-category="Ancillary Services">
-          <div class="partners-listItemDetails">
-            <div class="partners-listItemDetailsContent">
-              <h3>@item[Templates.Partners.Fields.Title]</h3>
-              <address>
-                @item[Templates.Partners.Fields.Address]<br>
-                <a href="tel://@item[Templates.Partners.Fields.Telephone]">@item[Templates.Partners.Fields.Telephone]</a>
-              </address>
-            </div>
-            <ul class="partners-listItemDetailsSocial">
-              @if (item[Templates.Partners.Fields.Link] != string.Empty)
-              {
-                <li class="partners-listItemDetailsSocialWebsite">
-                  <a href=" @item[Templates.Partners.Fields.Link]" target="_blank" rel="noopener">
-                    <span class="visually-hidden">Website</span>
-                    <svg aria-hidden="true" role="presentation" class="icon icon-website">
-                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/images/icons.svg#icon-website"></use>
-                    </svg>
-                  </a>
-                </li>
-              }
-            </ul>
-          </div>
+  @foreach (var Partner in Model)
+  {
+    var value = (Partner.item.Database.GetItem(((Sitecore.Data.Fields.LinkField)Partner.item.Fields[Templates.Partners.Fields.Value]).Value).Name);
+    <div class="partners-listItem visible" data-id="BP96" data-prefix="#" data-name="(NDIGITEC)Namma Int’l Digitec FZ-LLC" data-category="Ancillary Services">
+      <div class="partners-listItemDetails">
+        <div class="partners-listItemDetailsContent">
+          <h3>@Partner.item[Templates.Partners.Fields.Title]</h3>
+          <address>
+            @Partner.item[Templates.Partners.Fields.Address]<br>
+            <a href="tel://@Partner.item[Templates.Partners.Fields.Telephone]">@Partner.item[Templates.Partners.Fields.Telephone]</a>
+          </address>
         </div>
-     }
-  </div>
+        <ul class="partners-listItemDetailsSocial">
+          @if (Partner.item[Templates.Partners.Fields.Link] != string.Empty)
+          {
+            <li class="partners-listItemDetailsSocialWebsite">
+              <a href=" @Partner.item[Templates.Partners.Fields.Link]" target="_blank" rel="noopener">
+                <span class="visually-hidden">Website</span>
+                <svg aria-hidden="true" role="presentation" class="icon icon-website">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/images/icons.svg#icon-website"></use>
+                </svg>
+              </a>
+            </li>
+          }
+        </ul>
+      </div>
+    </div>
+  }
+</div>

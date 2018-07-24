@@ -9,12 +9,12 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{C847E8B9-7B34-4A05-BD06-4448A2F59603}</ProjectGuid>
+    <ProjectGuid>{63BE94DE-DCDA-4041-85B1-F29E7FDCA8CD}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Sitecore.Feature.Partners</RootNamespace>
-    <AssemblyName>Sitecore.Feature.Partners</AssemblyName>
+    <RootNamespace>Sitecore.Feature.Urban</RootNamespace>
+    <AssemblyName>Sitecore.Feature.Urban</AssemblyName>
     <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
@@ -121,18 +121,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Config\Include\Feature\Feature.Partners.config">
+    <Content Include="App_Config\Include\Feature\Feature.Urban.config">
       <SubType>Designer</SubType>
     </Content>
-    <Content Include="App_Config\Include\Feature\Feature.Partners.Serialization.config" />
+    <Content Include="App_Config\Include\Feature\Feature.Urban.Serialization.config" />
     <Content Include="packages.config" />
-    <Content Include="App_Config\Include\Feature\Partners.DefaultIndexConfiguration.config">
-      <SubType>Designer</SubType>
-    </Content>
     <None Include="Properties\PublishProfiles\Local.pubxml" />
-    <Content Include="Script\Parent.js" />
-    <Content Include="Views\Partners\PartnersList.cshtml" />
-    <Content Include="Views\Partners\PartnersFilter.cshtml" />
+    <Content Include="Views\Urban\UrbanList.cshtml" />
     <None Include="Views\Web.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -145,8 +140,6 @@
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controllers\PartnersController.cs" />
-    <Compile Include="Models\PartnersList.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Templates.cs" />
   </ItemGroup>
