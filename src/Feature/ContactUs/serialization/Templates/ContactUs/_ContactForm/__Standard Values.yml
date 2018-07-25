@@ -1,8 +1,8 @@
 ﻿---
-ID: "6f13477b-8cf3-44fa-bdd2-8a70fda9244a"
-Parent: "90b2bbb7-1436-4435-9b25-ac4b3e4bd500"
-Template: "e269fbb5-3750-427a-9149-7aa950b49301"
-Path: /sitecore/templates/Feature/Urban/_HasImage/Content
+ID: "19eb3d4d-6882-4ef5-8f24-fe0c930a54f9"
+Parent: "6143df31-bdba-4297-b6b8-51d9291f1cde"
+Template: "6143df31-bdba-4297-b6b8-51d9291f1cde"
+Path: /sitecore/templates/Feature/ContactUs/_ContactForm/__Standard Values
 DB: master
 Languages:
 - Language: en
@@ -11,7 +11,7 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20180723T113325Z
+      Value: 20180724T122154Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |

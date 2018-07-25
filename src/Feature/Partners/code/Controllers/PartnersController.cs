@@ -9,20 +9,21 @@ namespace Sitecore.Feature.Partners.Controllers
 {
   public class PartnersController : Controller
   {
-   
+
     [HttpGet]
     public ActionResult GetPartnersList(string letter)
     {
       var datasource = Sitecore.Context.Database.GetItem("{8B5D765F-A21D-413F-B202-B31D34FC8976}");
       IEnumerable<PartnersList> list = null;
 
-            if(letter =="All")
+      if (letter == "All")
       {
         list = datasource.GetChildren().Select(o => new PartnersList { item = o, Partners = GetChildren(o), Value = o.Database.GetItem(((Sitecore.Data.Fields.LinkField)o.Fields[Templates.Partners.Fields.Value]).Value).Name });
       }
-      else {  
+      else
+      {
         list = datasource.GetChildren().Where(o => FiletrItem(o, letter)).Select(o => new PartnersList { item = o, Partners = GetChildren(o), Value = o.Database.GetItem(((Sitecore.Data.Fields.LinkField)o.Fields[Templates.Partners.Fields.Value]).Value).Name });
-       }
+      }
       return View("/Views/Partners/PartnersList.cshtml", list);
     }
 
@@ -31,9 +32,9 @@ namespace Sitecore.Feature.Partners.Controllers
       //var datasource = RenderingContext.CurrentOrNull.Rendering.DataSource;
       var datasource = RenderingContext.Current.Rendering.Item;
       IEnumerable<PartnersList> list = null;
-      
-        list = datasource.GetChildren().Select(o => new PartnersList { item = o, Partners = GetChildren(o), Value = o.Database.GetItem(((Sitecore.Data.Fields.LinkField)o.Fields[Templates.Partners.Fields.Value]).Value).Name });
-     
+
+      list = datasource.GetChildren().Select(o => new PartnersList { item = o, Partners = GetChildren(o), Value = o.Database.GetItem(((Sitecore.Data.Fields.LinkField)o.Fields[Templates.Partners.Fields.Value]).Value).Name });
+
       return View("/Views/Partners/PartnersList.cshtml", list);
     }
 

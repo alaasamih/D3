@@ -134,7 +134,7 @@
     <Content Include="Views\PageContent\PageTeaser.cshtml" />
     <Content Include="Views\PageContent\PageAbout.cshtml" />
     <Content Include="Views\PageContent\PageAboutImage.cshtml" />
-    <Content Include="Views\PageContent\PageCo-working.cshtml" />
+    <Content Include="Views\PageContent\PageCoworking.cshtml" />
     <Content Include="Views\PageContent\PageMilan.cshtml" />
     <Content Include="Views\PageContent\PageBlock.cshtml" />
     <None Include="Views\Web.config" />

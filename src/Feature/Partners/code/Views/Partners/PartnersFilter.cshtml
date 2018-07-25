@@ -1,10 +1,13 @@
-﻿
-@model Sitecore.Mvc.Presentation.RenderingModel
-<title>
-  Dubai Design District | Business Partners
-</title>
+﻿@model Sitecore.Mvc.Presentation.RenderingModel
 
-<script src="~/Script/Parent.js"></script>
+<script >
+    function getPartners(letter, contextSite) {
+    $.get("@Url.Action("GetPartnersList","Partners")?letter=" + letter, function (data) {
+      $("#divPartners").html(data);
+    })
+  }
+  </script>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 <ul class="partners-filterList" data-selected-index="0">

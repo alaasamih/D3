@@ -3,13 +3,6 @@
 @using Sitecore.Foundation.SitecoreExtensions.Extensions
 @model Sitecore.Mvc.Presentation.RenderingModel
 
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>
-    Dubai Design District | The Venturists by d3
-  </title>
-</head>
-
 <div class="row common-page-row">
   <h1>@Html.Sitecore().Field(Templates.PageHeader.Fields.Title, Model.Item)</h1>
   <p>@Html.Sitecore().Field(Templates.PageHeader.Fields.Summary, Model.Item)</p>
